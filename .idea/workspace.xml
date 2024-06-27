@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index.">
+    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="Arrumado o index e adicionado o css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -28,12 +31,12 @@
     &quot;assignee&quot;: &quot;RaphaVini6&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RaphaVini6/Portifolio-1.git",
-    "accountId": "f48aa796-de07-4b74-adbb-2057a2e7e00e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RaphaVini6/Portifolio-1.git&quot;,
+    &quot;accountId&quot;: &quot;f48aa796-de07-4b74-adbb-2057a2e7e00e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -48,6 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/raphael.uchoa/Desktop/teste3/portal&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1719317539286</updated>
       <workItem from="1719317540430" duration="1409000" />
-      <workItem from="1719429416437" duration="409000" />
+      <workItem from="1719429416437" duration="629000" />
+      <workItem from="1719509361303" duration="5790000" />
     </task>
     <task id="LOCAL-00001" summary="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index.">
       <option name="closed" value="true" />
@@ -82,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719317976151</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Arrumado o index e adicionado o css">
+      <option name="closed" value="true" />
+      <created>1719430022957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719430022958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index." />
+    <MESSAGE value="Arrumado o index e adicionado o css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrumado o index e adicionado o css" />
   </component>
 </project>
