@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="Arrumado o index e adicionado o css">
-      <change afterPath="$PROJECT_DIR$/imagem/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="Arrumado o index e  o css">
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +85,7 @@
       <workItem from="1720101937105" duration="5669000" />
       <workItem from="1720115491061" duration="516000" />
       <workItem from="1720149561255" duration="44000" />
-      <workItem from="1720753004975" duration="4024000" />
+      <workItem from="1720753004975" duration="4133000" />
     </task>
     <task id="LOCAL-00001" summary="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index.">
       <option name="closed" value="true" />
@@ -107,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719430022958</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Arrumado o index e  o css">
+      <option name="closed" value="true" />
+      <created>1720757103126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720757103126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index." />
     <MESSAGE value="Arrumado o index e adicionado o css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrumado o index e adicionado o css" />
+    <MESSAGE value="Arrumado o index e  o css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrumado o index e  o css" />
   </component>
 </project>
