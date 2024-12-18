@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio-Raphael Vinicius</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <a href="#" class="logo">Raphael Vinicius</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Raphael Vinicius</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header Section -->
+<div class="container">
+    <header class="navbar">
+        <h2 class="logo">Raphael Vinicius</h2>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+</div>
 
-                <nav class="navbar">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Sobre mim</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Contato</a>
-                </nav>
-            </header>
-
-            <section class="home">
-                <div class="home-detail">
-                    <h1>Olá, eu sou o Raphael Vinicius</h1>
-                    <h2>Desenvolvedor </h2>
-                    <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e programação.</p>
-                    <div class="social-midia">
-                        <a href="# class="btn">Dowload CV</a>
-                        <div class = "social-midia">
-                            <a href="#"><i class="ri-github-fill"></i></a>
-                            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                            <a href="#"><i class="ri-instagram-line"></i></a>
-                        </div>
-                    </div>
+<div class="container">
+    <main class="home">
+        <div class="home-detail">
+            <h1>Olá, eu sou o Raphael Vinicius</h1>
+            <h2>Desenvolvedor</h2>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e programação.</p>
+            <div class="download-midia">
+                <a href="#" class="btn">Download CV</a>
+                <div class="social-midia">
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
                 </div>
-            </section>
+            </div>
         </div>
-    </body>
+        <div class="home-img">
+            <img src="imagem/about.png" alt="Raphael Vinicius">
+        </div>
+    </main>
+</div>
+
+
+<div class="container" id="projetos">
+    <section class="projects">
+        <h2 class="heading">Meus <span>Projetos</span></h2>
+        <div class="projects-content">
+            <div class="projects-box">
+                <i class="ri-code-s-slash-line"></i>
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto 1 com detalhes incríveis.</p>
+                <a href="#" class="btn">Veja mais</a>
+            </div>
+            <div class="projects-box">
+                <i class="ri-code-s-slash-line"></i>
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto 2 com foco em inovação.</p>
+                <a href="#" class="btn">Veja mais</a>
+            </div>
+            <div class="projects-box">
+                <i class="ri-code-s-slash-line"></i>
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do projeto 3 com soluções criativas.</p>
+                <a href="#" class="btn">Veja mais</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--<div class="container" id="contato">-->
+<!--    <section class="contact">-->
+<!--        <h2 class="heading">Entre em <span>Contato</span></h2>-->
+<!--        <form action="#">-->
+<!--            <input type="text" placeholder="Seu nome" required>-->
+<!--            <input type="email" placeholder="Seu e-mail" required>-->
+<!--            <textarea placeholder="Sua mensagem" rows="5" required></textarea>-->
+<!--            <button type="submit" class="btn">Enviar</button>-->
+<!--        </form>-->
+<!--    </section>-->
+<!--</div>-->
+</body>
 </html>
