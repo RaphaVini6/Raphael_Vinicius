@@ -7,7 +7,6 @@
     <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="new version atualizando!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <workItem from="1724770009157" duration="56000" />
       <workItem from="1734433362239" duration="60000" />
       <workItem from="1734433425155" duration="9365000" />
-      <workItem from="1734517678055" duration="8788000" />
+      <workItem from="1734517678055" duration="9871000" />
     </task>
     <task id="LOCAL-00001" summary="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index.">
       <option name="closed" value="true" />
@@ -137,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734447901418</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new version atualizando!">
+      <option name="closed" value="true" />
+      <created>1734535300670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734535300670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
