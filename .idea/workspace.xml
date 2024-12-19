@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="Arrumado">
+    <list default="true" id="35f84473-9db1-4d1d-a20d-af3a24b0fee9" name="Changes" comment="new version atualizando!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CV.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,6 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RaphaVini6/Raphael_Vinicius.git&quot;,
-    &quot;accountId&quot;: &quot;a66629a7-2426-44fb-96d7-f9cdff0d56df&quot;
+    &quot;accountId&quot;: &quot;73221da3-f3a8-4e19-9edc-1898fc065464&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -46,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Raphael/WebstormProjects/Raphael_Vinicius/docs",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rafah/WebstormProjects/Raphael_Vinicius/docs&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Raphael\WebstormProjects\Raphael_Vinicius\docs" />
       <recent name="C:\Users\Rafah\WebstormProjects\Raphael_Vinicius\docs" />
       <recent name="C:\Users\Rafah\WebstormProjects\Raphael_Vinicius\imagem" />
     </key>
@@ -72,7 +70,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
       </set>
     </attachedChunks>
   </component>
@@ -94,6 +92,9 @@
       <workItem from="1720753004975" duration="4186000" />
       <workItem from="1720796127184" duration="3976000" />
       <workItem from="1724770009157" duration="56000" />
+      <workItem from="1734433362239" duration="60000" />
+      <workItem from="1734433425155" duration="9365000" />
+      <workItem from="1734517678055" duration="9871000" />
     </task>
     <task id="LOCAL-00001" summary="Aqui esta o index do portifolio,onde aqui esta descrito a barra de navegação ,o direcionamento do estilo e o codigo js do index.">
       <option name="closed" value="true" />
@@ -127,15 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720757199170</updated>
     </task>
-    <task id="LOCAL-00005" summary="Arrumado">
+    <task id="LOCAL-00005" summary="new version atualizando!">
       <option name="closed" value="true" />
-      <created>1734554812475</created>
+      <created>1734447901418</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1734554812475</updated>
+      <updated>1734447901418</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new version atualizando!">
+      <option name="closed" value="true" />
+      <created>1734535300670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734535300670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +166,7 @@
     <MESSAGE value="Arrumado o index e adicionado o css" />
     <MESSAGE value="Arrumado o index e  o css" />
     <MESSAGE value="Arrumado  o css" />
-    <MESSAGE value="Arrumado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrumado" />
+    <MESSAGE value="new version atualizando!" />
+    <option name="LAST_COMMIT_MESSAGE" value="new version atualizando!" />
   </component>
 </project>
