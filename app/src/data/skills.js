@@ -1,11 +1,11 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiPython, SiMysql, SiGit, SiGithub } from 'react-icons/si'
+import { SiHtml5, SiCss, SiJavascript, SiReact, SiPython, SiMysql, SiGit, SiGithub } from 'react-icons/si'
 
 export const skillCategories = [
   {
     category: 'Front-end',
     items: [
       { name: 'HTML5', Icon: SiHtml5 },
-      { name: 'CSS3', Icon: SiCss3 },
+      { name: 'CSS3', Icon: SiCss },
       { name: 'JavaScript', Icon: SiJavascript },
       { name: 'React', Icon: SiReact },
     ],
