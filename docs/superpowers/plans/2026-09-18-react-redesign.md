@@ -91,7 +91,7 @@ app/
 - Consumes: nada (primeira task).
 - Produces: comando `npm test` funcional dentro de `app/`, executando Vitest com ambiente `jsdom` e matchers do `@testing-library/jest-dom` disponíveis globalmente (`globals: true`).
 
-- [ ] **Step 1: Criar o projeto Vite**
+- [x] **Step 1: Criar o projeto Vite**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -100,13 +100,13 @@ cd app
 npm install
 ```
 
-- [ ] **Step 2: Instalar ferramentas de teste**
+- [x] **Step 2: Instalar ferramentas de teste**
 
 ```bash
 npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom
 ```
 
-- [ ] **Step 3: Configurar Vitest no `vite.config.js`**
+- [x] **Step 3: Configurar Vitest no `vite.config.js`**
 
 Substituir o conteúdo de `app/vite.config.js` por:
 
@@ -124,13 +124,13 @@ export default defineConfig({
 })
 ```
 
-- [ ] **Step 4: Criar `src/setupTests.js`**
+- [x] **Step 4: Criar `src/setupTests.js`**
 
 ```js
 import '@testing-library/jest-dom'
 ```
 
-- [ ] **Step 5: Adicionar script de teste no `package.json`**
+- [x] **Step 5: Adicionar script de teste no `package.json`**
 
 Em `app/package.json`, dentro de `"scripts"`, adicionar:
 
@@ -138,7 +138,7 @@ Em `app/package.json`, dentro de `"scripts"`, adicionar:
 "test": "vitest run"
 ```
 
-- [ ] **Step 6: Escrever teste de verificação do scaffold**
+- [x] **Step 6: Escrever teste de verificação do scaffold**
 
 Criar `app/src/App.test.jsx`:
 
@@ -154,12 +154,12 @@ describe('App scaffold', () => {
 })
 ```
 
-- [ ] **Step 7: Rodar os testes e confirmar que passam**
+- [x] **Step 7: Rodar os testes e confirmar que passam**
 
 Run: `npm test` (dentro de `app/`)
 Expected: PASS — 1 teste passando (o `App.jsx` padrão do template Vite ainda contém o texto "Vite + React").
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -180,7 +180,7 @@ git commit -m "chore: scaffold Vite + React app with Vitest/RTL tooling"
 - Consumes: projeto scaffolded da Task 1.
 - Produces: classes utilitárias Tailwind com tema customizado disponíveis em todo o app: cores `bg-bg`, `text-text`, `text-text-muted`, `text-accent`, `border-accent`, `bg-accent`; fontes `font-sans` (Inter) e `font-mono` (JetBrains Mono). Assets acessíveis publicamente em `/CV.pdf` e `/about.png`.
 
-- [ ] **Step 1: Instalar Tailwind**
+- [x] **Step 1: Instalar Tailwind**
 
 ```bash
 cd app
@@ -188,7 +188,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-- [ ] **Step 2: Configurar `tailwind.config.js`**
+- [x] **Step 2: Configurar `tailwind.config.js`**
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -214,7 +214,7 @@ export default {
 }
 ```
 
-- [ ] **Step 3: Substituir `app/src/index.css`**
+- [x] **Step 3: Substituir `app/src/index.css`**
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
@@ -228,7 +228,7 @@ body {
 }
 ```
 
-- [ ] **Step 4: Copiar os assets existentes para `public/`**
+- [x] **Step 4: Copiar os assets existentes para `public/`**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -236,12 +236,12 @@ cp docs/CV.pdf app/public/CV.pdf
 cp imagem/about.png app/public/about.png
 ```
 
-- [ ] **Step 5: Verificação manual**
+- [x] **Step 5: Verificação manual**
 
 Run: `npm run dev` (dentro de `app/`)
 Expected: página padrão do Vite abre com fundo escuro (`#0d1117`) e texto claro — confirma que o Tailwind e as fontes foram aplicados. Acessar `http://localhost:5173/CV.pdf` e `http://localhost:5173/about.png` no navegador e confirmar que ambos carregam.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -269,7 +269,7 @@ git commit -m "feat: add Tailwind theme, fonts and static assets"
   - `socialLinks`: `{ id: string, label: string, href: string, Icon: React.ComponentType }[]`
   - `navSections`: `{ id: string, label: string }[]`
 
-- [ ] **Step 1: Teste de `projects`**
+- [x] **Step 1: Teste de `projects`**
 
 Criar `app/src/data/projects.test.js`:
 
@@ -289,12 +289,12 @@ describe('projects data', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- projects` (dentro de `app/`)
 Expected: FAIL — `Cannot find module './projects'`
 
-- [ ] **Step 3: Criar `app/src/data/projects.js`**
+- [x] **Step 3: Criar `app/src/data/projects.js`**
 
 ```js
 export const projects = [
@@ -343,12 +343,12 @@ export const projects = [
 ]
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- projects`
 Expected: PASS
 
-- [ ] **Step 5: Teste de `socialLinks`**
+- [x] **Step 5: Teste de `socialLinks`**
 
 Criar `app/src/data/socialLinks.test.js`:
 
@@ -367,7 +367,7 @@ describe('socialLinks data', () => {
 })
 ```
 
-- [ ] **Step 6: Rodar e confirmar falha, depois criar `app/src/data/socialLinks.js`**
+- [x] **Step 6: Rodar e confirmar falha, depois criar `app/src/data/socialLinks.js`**
 
 ```js
 import { RiLinkedinFill, RiGithubLine, RiInstagramLine } from 'react-icons/ri'
@@ -404,7 +404,7 @@ npm install react-icons
 Run: `npm test -- socialLinks`
 Expected: PASS
 
-- [ ] **Step 7: Teste de `skills`**
+- [x] **Step 7: Teste de `skills`**
 
 Criar `app/src/data/skills.test.js`:
 
@@ -425,7 +425,7 @@ describe('skills data', () => {
 })
 ```
 
-- [ ] **Step 8: Rodar e confirmar falha, depois criar `app/src/data/skills.js`**
+- [x] **Step 8: Rodar e confirmar falha, depois criar `app/src/data/skills.js`**
 
 ```js
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiPython, SiMysql, SiGit, SiGithub } from 'react-icons/si'
@@ -462,7 +462,7 @@ export const skillCategories = [
 Run: `npm test -- skills`
 Expected: PASS
 
-- [ ] **Step 9: Teste de `timeline`**
+- [x] **Step 9: Teste de `timeline`**
 
 Criar `app/src/data/timeline.test.js`:
 
@@ -481,7 +481,7 @@ describe('timeline data', () => {
 })
 ```
 
-- [ ] **Step 10: Rodar e confirmar falha, depois criar `app/src/data/timeline.js`**
+- [x] **Step 10: Rodar e confirmar falha, depois criar `app/src/data/timeline.js`**
 
 ```js
 export const timelineEntries = [
@@ -521,7 +521,7 @@ export const timelineEntries = [
 Run: `npm test -- timeline`
 Expected: PASS
 
-- [ ] **Step 11: Teste de `navSections`**
+- [x] **Step 11: Teste de `navSections`**
 
 Criar `app/src/data/navSections.test.js`:
 
@@ -542,7 +542,7 @@ describe('navSections data', () => {
 })
 ```
 
-- [ ] **Step 12: Rodar e confirmar falha, depois criar `app/src/data/navSections.js`**
+- [x] **Step 12: Rodar e confirmar falha, depois criar `app/src/data/navSections.js`**
 
 ```js
 export const navSections = [
@@ -558,7 +558,7 @@ export const navSections = [
 Run: `npm test`
 Expected: PASS (todos os testes de `data/`)
 
-- [ ] **Step 13: Commit**
+- [x] **Step 13: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -577,7 +577,7 @@ git commit -m "feat: add content data modules (projects, skills, timeline, socia
 - Consumes: nada.
 - Produces: `getActiveSection(sections, scrollY, offset = 0)` → `string | null`, onde `sections: { id: string, offsetTop: number }[]` (usado pela Task 7, `Navbar`).
 
-- [ ] **Step 1: Escrever os testes**
+- [x] **Step 1: Escrever os testes**
 
 ```js
 import { getActiveSection } from './getActiveSection'
@@ -611,12 +611,12 @@ describe('getActiveSection', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- getActiveSection`
 Expected: FAIL — `Cannot find module './getActiveSection'`
 
-- [ ] **Step 3: Implementar**
+- [x] **Step 3: Implementar**
 
 ```js
 export function getActiveSection(sections, scrollY, offset = 0) {
@@ -632,12 +632,12 @@ export function getActiveSection(sections, scrollY, offset = 0) {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- getActiveSection`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -656,7 +656,7 @@ git commit -m "feat: add getActiveSection pure utility for scroll-spy"
 - Consumes: nada.
 - Produces: `useTypingEffect(entries, options)` → `{ title: string, subtitle: string }`, onde `entries: { title: string, subtitle: string }[]`, `options?: { typingSpeed?: number, deletingSpeed?: number, pauseTime?: number }` (usado pela Task 9, `Hero`).
 
-- [ ] **Step 1: Escrever os testes (com fake timers)**
+- [x] **Step 1: Escrever os testes (com fake timers)**
 
 ```js
 import { renderHook, act } from '@testing-library/react'
@@ -728,12 +728,12 @@ describe('useTypingEffect', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- useTypingEffect`
 Expected: FAIL — `Cannot find module './useTypingEffect'`
 
-- [ ] **Step 3: Implementar o hook**
+- [x] **Step 3: Implementar o hook**
 
 ```js
 import { useEffect, useRef, useState } from 'react'
@@ -790,12 +790,12 @@ export function useTypingEffect(
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- useTypingEffect`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -814,7 +814,7 @@ git commit -m "feat: add useTypingEffect hook for the hero heading"
 - Consumes: `socialLinks` de `../data/socialLinks`.
 - Produces: `export default function SocialLinks({ className = '' })` (usado pelas Tasks 9 e 14, `Hero` e `Footer`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -840,12 +840,12 @@ describe('SocialLinks', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- SocialLinks`
 Expected: FAIL — `Cannot find module './SocialLinks'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { socialLinks } from '../data/socialLinks'
@@ -870,12 +870,12 @@ export default function SocialLinks({ className = '' }) {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- SocialLinks`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -894,7 +894,7 @@ git commit -m "feat: add SocialLinks component"
 - Consumes: `navSections` de `../data/navSections`; `getActiveSection` de `../utils/getActiveSection`.
 - Produces: `export default function Navbar()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -914,12 +914,12 @@ describe('Navbar', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Navbar`
 Expected: FAIL — `Cannot find module './Navbar'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { useEffect, useState } from 'react'
@@ -968,12 +968,12 @@ export default function Navbar() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Navbar`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -992,14 +992,14 @@ git commit -m "feat: add Navbar with scroll-spy"
 - Consumes: `framer-motion`.
 - Produces: `export default function AnimatedSection({ id, className = '', children })` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Instalar `framer-motion`**
+- [x] **Step 1: Instalar `framer-motion`**
 
 ```bash
 cd app
 npm install framer-motion
 ```
 
-- [ ] **Step 2: Escrever o teste**
+- [x] **Step 2: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1019,12 +1019,12 @@ describe('AnimatedSection', () => {
 })
 ```
 
-- [ ] **Step 3: Rodar e confirmar falha**
+- [x] **Step 3: Rodar e confirmar falha**
 
 Run: `npm test -- AnimatedSection`
 Expected: FAIL — `Cannot find module './AnimatedSection'`
 
-- [ ] **Step 4: Implementar o componente**
+- [x] **Step 4: Implementar o componente**
 
 ```jsx
 import { motion } from 'framer-motion'
@@ -1045,12 +1045,12 @@ export default function AnimatedSection({ id, className = '', children }) {
 }
 ```
 
-- [ ] **Step 5: Rodar e confirmar sucesso**
+- [x] **Step 5: Rodar e confirmar sucesso**
 
 Run: `npm test -- AnimatedSection`
 Expected: PASS
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1069,7 +1069,7 @@ git commit -m "feat: add AnimatedSection scroll-reveal wrapper"
 - Consumes: `useTypingEffect` de `../hooks/useTypingEffect`; `SocialLinks` de `./SocialLinks`.
 - Produces: `export default function Hero()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1085,12 +1085,12 @@ describe('Hero', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Hero`
 Expected: FAIL — `Cannot find module './Hero'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { useTypingEffect } from '../hooks/useTypingEffect'
@@ -1136,12 +1136,12 @@ export default function Hero() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Hero`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1160,7 +1160,7 @@ git commit -m "feat: add Hero terminal-window section"
 - Consumes: asset `/about.png`.
 - Produces: `export default function About()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1179,12 +1179,12 @@ describe('About', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- About`
 Expected: FAIL — `Cannot find module './About'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 export default function About() {
@@ -1214,12 +1214,12 @@ export default function About() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- About`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1238,7 +1238,7 @@ git commit -m "feat: add About section"
 - Consumes: `skillCategories` de `../data/skills`.
 - Produces: `export default function Skills()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1259,12 +1259,12 @@ describe('Skills', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Skills`
 Expected: FAIL — `Cannot find module './Skills'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { RiCodeSSlashLine } from 'react-icons/ri'
@@ -1299,12 +1299,12 @@ export default function Skills() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Skills`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1323,7 +1323,7 @@ git commit -m "feat: add Skills section"
 - Consumes: `timelineEntries` de `../data/timeline`.
 - Produces: `export default function Timeline()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1343,12 +1343,12 @@ describe('Timeline', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Timeline`
 Expected: FAIL — `Cannot find module './Timeline'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { timelineEntries } from '../data/timeline'
@@ -1374,12 +1374,12 @@ export default function Timeline() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Timeline`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1398,7 +1398,7 @@ git commit -m "feat: add Timeline section"
 - Consumes: `projects` de `../data/projects`.
 - Produces: `export default function Projects()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1421,12 +1421,12 @@ describe('Projects', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Projects`
 Expected: FAIL — `Cannot find module './Projects'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import { RiCodeSSlashLine } from 'react-icons/ri'
@@ -1464,12 +1464,12 @@ export default function Projects() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Projects`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1488,7 +1488,7 @@ git commit -m "feat: add Projects section"
 - Consumes: `SocialLinks` de `./SocialLinks`.
 - Produces: `export default function Footer()` (usado pela Task 15, `App`).
 
-- [ ] **Step 1: Escrever o teste**
+- [x] **Step 1: Escrever o teste**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1504,12 +1504,12 @@ describe('Footer', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- Footer`
 Expected: FAIL — `Cannot find module './Footer'`
 
-- [ ] **Step 3: Implementar o componente**
+- [x] **Step 3: Implementar o componente**
 
 ```jsx
 import SocialLinks from './SocialLinks'
@@ -1532,12 +1532,12 @@ export default function Footer() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test -- Footer`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1557,7 +1557,7 @@ git commit -m "feat: add Footer section"
 - Consumes: `Navbar`, `AnimatedSection`, `Hero`, `About`, `Skills`, `Timeline`, `Projects`, `Footer`.
 - Produces: `export default function App()` — árvore final da aplicação.
 
-- [ ] **Step 1: Substituir `app/src/App.test.jsx`**
+- [x] **Step 1: Substituir `app/src/App.test.jsx`**
 
 ```jsx
 import { render, screen } from '@testing-library/react'
@@ -1578,12 +1578,12 @@ describe('App', () => {
 })
 ```
 
-- [ ] **Step 2: Rodar e confirmar falha**
+- [x] **Step 2: Rodar e confirmar falha**
 
 Run: `npm test -- App`
 Expected: FAIL — o `App.jsx` atual (do scaffold) ainda renderiza o conteúdo padrão do Vite, sem os ids esperados.
 
-- [ ] **Step 3: Substituir `app/src/App.jsx`**
+- [x] **Step 3: Substituir `app/src/App.jsx`**
 
 ```jsx
 import Navbar from './components/Navbar'
@@ -1624,12 +1624,12 @@ export default function App() {
 }
 ```
 
-- [ ] **Step 4: Rodar e confirmar sucesso**
+- [x] **Step 4: Rodar e confirmar sucesso**
 
 Run: `npm test`
 Expected: PASS — todos os testes do app (dados, utilitário, hook, componentes e `App`) passam.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
@@ -1648,12 +1648,12 @@ git commit -m "feat: assemble App with all sections"
 - Consumes: app completo das Tasks 1-15.
 - Produces: build de produção validado, pronto para revisão humana (deploy fica para uma etapa separada, fora de escopo desta spec).
 
-- [ ] **Step 1: Rodar toda a suíte de testes**
+- [x] **Step 1: Rodar toda a suíte de testes**
 
 Run: `npm test` (dentro de `app/`)
 Expected: PASS — todos os testes.
 
-- [ ] **Step 2: Rodar o build de produção**
+- [x] **Step 2: Rodar o build de produção**
 
 Run: `npm run build` (dentro de `app/`)
 Expected: build conclui sem erros, gera pasta `app/dist/`.
@@ -1670,7 +1670,17 @@ Run: `npm run dev` e abrir no navegador. Checklist manual:
 - [ ] Os 6 cards de projeto têm o link "Veja mais" apontando para o repositório correto.
 - [ ] Layout responsivo: testar em largura de tela reduzida (~375px) e confirmar que nada quebra (sem overflow horizontal).
 
-- [ ] **Step 4: Commit final (se houver ajustes do QA manual)**
+> **Nota de execução:** nenhuma ferramenta de automação de navegador estava
+> disponível nesta sessão (sem `chromium-cli`; a extensão Claude in Chrome
+> havia sido recusada anteriormente), então este checklist visual não foi
+> executado de fato e permanece como pendência para revisão humana. O que
+> foi verificado automaticamente: o servidor de desenvolvimento sobe e
+> serve a página (`curl` confirmou o HTML base), o build de produção
+> conclui sem erros, e a suíte de testes (17 arquivos / 23 testes) cobre
+> o conteúdo e os links de cada seção — mas não o resultado visual/CSS
+> nem o comportamento responsivo real em diferentes larguras de tela.
+
+- [x] **Step 4: Commit final (se houver ajustes do QA manual)**
 
 ```bash
 cd "C:/Users/RaphaelDias/WebstormProjects/Raphael_Vinicius"
