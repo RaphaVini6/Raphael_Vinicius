@@ -10,14 +10,14 @@ export default function About() {
         <p className="font-mono text-sm text-accent">// 01. sobre-mim</p>
         <h2 className="mt-2 text-2xl font-bold text-text">Sobre mim</h2>
         <p className="mt-6 leading-relaxed text-text-muted">
-          Olá! Meu nome é Raphael Vinicius, mas pode me chamar de Rafah. Atualmente estou cursando
-          Ciência da Computação na Universidade Tiradentes (UNIT). Sou especialista em
-          Desenvolvimento Front-end, mas estou no caminho para me tornar um Desenvolvedor
-          Full-Stack.
+          Olá! Meu nome é Raphael Vinicius, mas pode me chamar de Rafah. Sou desenvolvedor
+          Full-Stack e estudante de Ciência da Computação na Universidade Tiradentes (UNIT), com
+          previsão de conclusão no final de 2026.
         </p>
         <p className="mt-4 leading-relaxed text-text-muted">
-          No momento, estou aprimorando minhas habilidades em Front-end enquanto aprofundo meus
-          conhecimentos em bancos de dados e inteligencia artificial(IA).
+          Tenho experiência em sistemas web, automações e soluções com Inteligência Artificial (RAG
+          e agentes). Hoje atuo como Desenvolvedor de Software Júnior na Verity, com foco em
+          engenharia de software e entrega de soluções eficientes.
         </p>
 
         <AnimatePresence initial={false}>

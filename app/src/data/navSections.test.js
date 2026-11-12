@@ -6,7 +6,7 @@ describe('navSections data', () => {
       'home',
       'sobre-mim',
       'skills',
-      'timeline',
+      'experiencia',
       'projetos',
       'contato',
     ])

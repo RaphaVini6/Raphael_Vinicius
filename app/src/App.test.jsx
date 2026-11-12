@@ -9,7 +9,7 @@ describe('App', () => {
     expect(document.getElementById('home')).not.toBeNull()
     expect(document.getElementById('sobre-mim')).not.toBeNull()
     expect(document.getElementById('skills')).not.toBeNull()
-    expect(document.getElementById('timeline')).not.toBeNull()
+    expect(document.getElementById('experiencia')).not.toBeNull()
     expect(document.getElementById('projetos')).not.toBeNull()
     expect(document.getElementById('contato')).not.toBeNull()
   })

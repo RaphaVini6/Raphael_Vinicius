@@ -3,7 +3,7 @@ import AnimatedSection from './components/AnimatedSection'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Timeline from './components/Timeline'
+import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 
@@ -27,8 +27,8 @@ export default function App() {
         <AnimatedSection id="skills">
           <Skills />
         </AnimatedSection>
-        <AnimatedSection id="timeline">
-          <Timeline />
+        <AnimatedSection id="experiencia">
+          <Experience />
         </AnimatedSection>
         <AnimatedSection id="projetos">
           <Projects />

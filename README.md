@@ -32,7 +32,7 @@ no painel do serviço, e não no código. Sem as chaves, o site mostra um botão
 ## Estrutura
 ```
 app/src/components/   seções e componentes da página
-app/src/data/         conteúdo (projetos, skills, timeline, links)
+app/src/data/         conteúdo (projetos, skills, experiência, links)
 app/src/hooks/        hooks (efeito de digitação)
 docs/superpowers/     specs e planos de design
 ```

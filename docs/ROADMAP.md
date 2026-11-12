@@ -17,10 +17,14 @@ Seção para artigos científicos ou acadêmicos publicados, com título, evento
 - Decisão: só entra quando houver ao menos um trabalho publicado ou apresentado em evento.
 - Hoje não há nenhum, então fica de fora.
 
+## Já feito
+
+- Menu mobile, hero com 5 idiomas, projetos (selos, tags, destaque) e Experiência/Formação a partir do currículo.
+
 ## Planejado
 
-1. Projetos: selos de status, tags, destaque e lista compacta.
-2. Experiência, Formação e cursos (com certificados) e Contato com cartões.
+1. Cursos e certificados (a Formação já está no site; faltam os cursos).
+2. Contato com cartões (e-mail, LinkedIn, GitHub).
 3. Acabamento: logo próprio, easter egg (ex.: o jogo Termo em uma página escondida).
 4. Deploy no GitHub Pages e remoção do site antigo em HTML puro.
 5. Configurar o EmailJS (chaves em `app/.env`) para o formulário de contato.
