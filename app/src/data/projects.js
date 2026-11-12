@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 'ia-documentacao-audio',
-    title: 'IA-Documentação por audio',
+    title: 'IA-Documentação por áudio',
     description:
       'Projeto freelance, no qual o sistema tem a função de transcrever todo o conteúdo do áudio enviado para a IA.',
     url: 'https://github.com/RaphaVini6/Freelance-IA-Gladston.git',
@@ -15,7 +15,7 @@ export const projects = [
   },
   {
     id: 'termo-extensionista',
-    title: 'Termo para Experiencia Extensionista',
+    title: 'Termo para Experiência Extensionista',
     description:
       "Um jogo no estilo 'Termo' desenvolvido como intervenção no contexto da disciplina de Experiência Extensionista.",
     url: 'https://github.com/RaphaVini6/Extensionista_termo.git',
@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     id: 'arvore-avl',
-    title: 'Arvore AVL',
+    title: 'Árvore AVL',
     description:
       'Projeto acadêmico para a disciplina de Estruturas de Dados Avançadas, com o objetivo de desenvolver uma implementação de Árvore AVL.',
     url: 'https://github.com/RaphaVini6/Web-AVL.git',

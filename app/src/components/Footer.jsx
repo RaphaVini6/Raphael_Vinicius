@@ -15,6 +15,9 @@ export default function Footer() {
       </a>
       <SocialLinks />
       <p className="mt-6 text-xs text-text-muted">© {new Date().getFullYear()} Raphael Vinicius</p>
+      <a href="#home" className="font-mono text-xs text-text-muted transition hover:text-accent">
+        ↑ Voltar ao topo
+      </a>
     </div>
   )
 }

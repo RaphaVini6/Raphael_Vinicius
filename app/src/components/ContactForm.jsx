@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+const CONTACT_EMAIL = 'raphaeluchoas89@gmail.com'
+
 export default function ContactForm() {
   const [status, setStatus] = useState('idle')
 
@@ -11,9 +13,18 @@ export default function ContactForm() {
 
   if (!isConfigured) {
     return (
-      <p className="max-w-md text-sm text-text-muted">
-        Formulário de contato em configuração — por enquanto, fale comigo pelos links abaixo.
-      </p>
+      <div className="flex max-w-md flex-col items-center gap-3">
+        <p className="text-sm text-text-muted">
+          Formulário de contato em configuração — por enquanto, fale comigo por e-mail ou pelos
+          links abaixo.
+        </p>
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="rounded-full border border-accent px-6 py-3 font-mono text-sm font-semibold text-accent transition hover:bg-accent hover:text-bg"
+        >
+          Enviar e-mail
+        </a>
+      </div>
     )
   }
 

@@ -8,4 +8,10 @@ describe('Hero', () => {
     expect(screen.getByRole('link', { name: /download cv/i })).toHaveAttribute('href', '/CV.pdf')
     expect(screen.getByRole('link', { name: /github/i })).toBeInTheDocument()
   })
+
+  it('links to the projects section', () => {
+    render(<Hero />)
+
+    expect(screen.getByRole('link', { name: /ver projetos/i })).toHaveAttribute('href', '#projetos')
+  })
 })

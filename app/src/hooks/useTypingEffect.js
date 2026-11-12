@@ -1,15 +1,24 @@
 import { useEffect, useRef, useState } from 'react'
 
+function prefersReducedMotion() {
+  return typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+}
+
 export function useTypingEffect(
   entries,
   { typingSpeed = 100, deletingSpeed = 50, pauseTime = 2000 } = {}
 ) {
-  const [display, setDisplay] = useState({ title: '', subtitle: '' })
+  const reduceMotion = prefersReducedMotion()
+  const [display, setDisplay] = useState(
+    reduceMotion ? { title: entries[0].title, subtitle: entries[0].subtitle } : { title: '', subtitle: '' }
+  )
   const entryIndex = useRef(0)
   const charIndex = useRef(0)
   const isDeleting = useRef(false)
 
   useEffect(() => {
+    if (reduceMotion) return undefined
+
     let timeoutId
 
     function tick() {

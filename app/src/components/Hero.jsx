@@ -4,13 +4,16 @@ import SocialLinks from './SocialLinks'
 const HERO_TEXTS = [
   { title: 'Olá, eu sou o Raphael Vinicius', subtitle: 'Desenvolvedor' },
   { title: 'Hello, I am Raphael Vinicius', subtitle: 'Developer' },
+  { title: 'Hola, soy Raphael Vinicius', subtitle: 'Desarrollador' },
+  { title: 'Bonjour, je suis Raphael Vinicius', subtitle: 'Développeur' },
+  { title: 'Ciao, sono Raphael Vinicius', subtitle: 'Sviluppatore' },
 ]
 
 export default function Hero() {
   const { title, subtitle } = useTypingEffect(HERO_TEXTS)
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-24">
+    <div className="hero-grid mx-auto max-w-3xl px-6 py-24">
       <div className="overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex items-center gap-2 border-b border-border px-4 py-3">
           <span className="h-3 w-3 rounded-full bg-red-500" />
@@ -33,6 +36,12 @@ export default function Hero() {
           className="rounded-full bg-accent px-6 py-3 font-mono text-sm font-semibold text-bg transition hover:brightness-110"
         >
           Download CV
+        </a>
+        <a
+          href="#projetos"
+          className="rounded-full border border-accent px-6 py-3 font-mono text-sm font-semibold text-accent transition hover:bg-accent hover:text-bg"
+        >
+          Ver projetos
         </a>
         <SocialLinks />
       </div>

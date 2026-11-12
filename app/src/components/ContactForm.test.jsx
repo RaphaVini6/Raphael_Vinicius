@@ -13,6 +13,15 @@ describe('ContactForm without EmailJS configured', () => {
     expect(screen.getByText(/formulário de contato em configuração/i)).toBeInTheDocument()
     expect(screen.queryByLabelText(/nome/i)).not.toBeInTheDocument()
   })
+
+  it('offers a mailto link as a fallback', () => {
+    render(<ContactForm />)
+
+    expect(screen.getByRole('link', { name: /enviar e-mail/i })).toHaveAttribute(
+      'href',
+      'mailto:raphaeluchoas89@gmail.com'
+    )
+  })
 })
 
 describe('ContactForm with EmailJS configured', () => {
