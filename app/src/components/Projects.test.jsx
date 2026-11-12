@@ -13,6 +13,25 @@ describe('Projects', () => {
     expect(screen.queryByRole('link')).not.toBeInTheDocument()
   })
 
+  it('splits projects into featured cards and a compact list', () => {
+    render(<Projects />)
+
+    const featured = projects.filter((project) => project.featured)
+    const others = projects.filter((project) => !project.featured)
+    expect(featured.length).toBeGreaterThan(0)
+    expect(others.length).toBeGreaterThan(0)
+    expect(screen.getByText(/outros projetos/i)).toBeInTheDocument()
+    expect(screen.getAllByRole('listitem').length).toBeGreaterThanOrEqual(others.length)
+  })
+
+  it('shows a status badge for every project and truncates long tag lists', () => {
+    render(<Projects />)
+
+    expect(screen.getAllByText('Projeto acadêmico').length).toBeGreaterThan(0)
+    expect(screen.getByText('Freelance')).toBeInTheDocument()
+    expect(screen.getByText('+1')).toBeInTheDocument()
+  })
+
   it('opens a modal with the description and link when a project card is clicked', () => {
     render(<Projects />)
     const project = projects[0]
