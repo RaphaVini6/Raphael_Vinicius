@@ -1,5 +1,7 @@
 import { RiLinkedinFill, RiGithubLine, RiInstagramLine } from 'react-icons/ri'
 
+export const contactEmail = 'raphaeluchoas89@gmail.com'
+
 export const socialLinks = [
   {
     id: 'linkedin',

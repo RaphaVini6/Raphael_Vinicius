@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
-
-const CONTACT_EMAIL = 'raphaeluchoas89@gmail.com'
+import { contactEmail } from '../data/socialLinks'
 
 export default function ContactForm() {
   const [status, setStatus] = useState('idle')
@@ -19,7 +18,7 @@ export default function ContactForm() {
           links abaixo.
         </p>
         <a
-          href={`mailto:${CONTACT_EMAIL}`}
+          href={`mailto:${contactEmail}`}
           className="rounded-full border border-accent px-6 py-3 font-mono text-sm font-semibold text-accent transition hover:bg-accent hover:text-bg"
         >
           Enviar e-mail
