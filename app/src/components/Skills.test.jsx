@@ -13,4 +13,11 @@ describe('Skills', () => {
       })
     })
   })
+
+  it('renders a skill without certUrl as plain text, not a link', () => {
+    render(<Skills />)
+
+    const skillWithoutCert = skillCategories[0].items[0]
+    expect(screen.queryByRole('link', { name: new RegExp(skillWithoutCert.name, 'i') })).not.toBeInTheDocument()
+  })
 })

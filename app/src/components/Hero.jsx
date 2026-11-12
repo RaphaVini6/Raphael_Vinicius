@@ -11,8 +11,8 @@ export default function Hero() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-24">
-      <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
-        <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
+      <div className="overflow-hidden rounded-xl border border-border bg-surface">
+        <div className="flex items-center gap-2 border-b border-border px-4 py-3">
           <span className="h-3 w-3 rounded-full bg-red-500" />
           <span className="h-3 w-3 rounded-full bg-yellow-500" />
           <span className="h-3 w-3 rounded-full bg-green-500" />

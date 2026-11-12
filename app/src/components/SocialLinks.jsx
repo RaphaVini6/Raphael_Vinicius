@@ -10,7 +10,7 @@ export default function SocialLinks({ className = '' }) {
           aria-label={label}
           target="_blank"
           rel="noreferrer"
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl text-text transition hover:border-accent hover:text-accent"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-surface text-xl text-text transition hover:border-accent hover:text-accent"
         >
           <Icon />
         </a>

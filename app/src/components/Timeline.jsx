@@ -6,7 +6,7 @@ export default function Timeline() {
       <p className="font-mono text-sm text-accent">// 03. timeline</p>
       <h2 className="mt-2 text-2xl font-bold text-text">git log --formacao</h2>
 
-      <ul className="mt-10 space-y-6 border-l border-white/10 pl-6">
+      <ul className="mt-10 space-y-6 border-l border-border pl-6">
         {timelineEntries.map((entry) => (
           <li key={entry.id} className="relative">
             <span className="absolute -left-[1.95rem] top-1 h-3 w-3 rounded-full bg-accent" />
