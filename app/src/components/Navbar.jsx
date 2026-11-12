@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { navSections } from '../data/navSections'
 import { getActiveSection } from '../utils/getActiveSection'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   const [active, setActive] = useState(navSections[0].id)
@@ -26,19 +27,22 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 flex w-full items-center justify-between bg-bg/90 px-6 py-4 backdrop-blur">
       <span className="font-mono text-lg text-accent">raphael@portfolio:~$</span>
-      <nav className="flex gap-6">
-        {navSections.map(({ id, label }) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            className={`font-mono text-sm transition ${
-              active === id ? 'text-accent' : 'text-text-muted hover:text-text'
-            }`}
-          >
-            {label}
-          </a>
-        ))}
-      </nav>
+      <div className="flex items-center gap-6">
+        <nav className="flex gap-6">
+          {navSections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={`font-mono text-sm transition ${
+                active === id ? 'text-accent' : 'text-text-muted hover:text-text'
+              }`}
+            >
+              {label}
+            </a>
+          ))}
+        </nav>
+        <ThemeToggle />
+      </div>
     </header>
   )
 }
