@@ -31,6 +31,33 @@ cd frontend && npm install && npm run dev
 
 Open http://localhost:5173. API docs: http://localhost:5000/scalar
 
+## Running with Docker
+
+Needs Docker Desktop (on Windows it requires WSL 2: run `wsl --install` as administrator and restart).
+
+```bash
+cp .env.example .env        # then fill in Speech__Knowlez__Key
+docker compose up --build
+```
+
+- Website: http://localhost:8080 (`FRONTEND_PORT`)
+- Backend API and docs: http://localhost:5000/scalar (`BACKEND_PORT`, docs only in Development)
+
+| Service | Image | Notes |
+|---|---|---|
+| `frontend` | node build + nginx | serves the site and proxies `/api` to the backend |
+| `backend` | .NET 10 | reaches the APIs by service name (`api-1-vlibras`, `api-2-speech`) |
+| `api-1-vlibras` | .NET 10 | |
+| `api-2-speech` | .NET 10 | audio cache in the `speech-cache` volume. Windows voices are not available in Linux containers, so it uses Knowlez (or Azure) |
+
+Homologation / production (backend port closed, `ASPNETCORE_ENVIRONMENT=Production`, always restart):
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+```
+
+Useful commands: `docker compose logs -f backend`, `docker compose down` (add `-v` to also delete the audio cache - it will spend the Knowlez trial requests again).
+
 ### Configuration (.env)
 
 All settings live in a single `.env` file in the repo root, read by the three .NET projects and by Vite.
