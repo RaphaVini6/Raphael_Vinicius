@@ -1,0 +1,311 @@
+[
+  {
+    "id": "no-power-source", "category": "Power", "inspiration": "Apollo LM (descent stage)", "massKg": 0,
+    "name": { "en": "No power generation", "pt": "Sem geração de energia", "es": "Sin generación de energía", "fr": "Aucune production d'énergie" },
+    "description": {
+      "en": "Relies on the battery alone. Used for short stays, like the Apollo lunar modules.",
+      "pt": "Depende só da bateria. Usado em estadias curtas, como os módulos lunares Apollo.",
+      "es": "Depende solo de la batería. Se usó en estancias cortas, como los módulos lunares Apolo.",
+      "fr": "Dépend uniquement de la batterie. Utilisé pour de courts séjours, comme les modules lunaires Apollo."
+    }
+  },
+  {
+    "id": "solar-panels", "category": "Power", "inspiration": "Spirit, Opportunity, InSight, Pathfinder",
+    "massKg": 15, "outputW": 200, "needsSunlight": true, "dustSensitive": true, "minTempC": -120, "maxTempC": 120,
+    "name": { "en": "Solar panels (GaAs)", "pt": "Painéis solares (GaAs)", "es": "Paneles solares (GaAs)", "fr": "Panneaux solaires (GaAs)" },
+    "description": {
+      "en": "Light and cheap, but they only work in sunlight and lose efficiency with dust.",
+      "pt": "Leves e baratos, mas só funcionam com luz e perdem eficiência com poeira.",
+      "es": "Ligeros y baratos, pero solo funcionan con luz y pierden eficiencia con el polvo.",
+      "fr": "Légers et bon marché, mais ils ne fonctionnent qu'à la lumière et perdent en efficacité avec la poussière."
+    }
+  },
+  {
+    "id": "rtg-snap19", "category": "Power", "inspiration": "Viking 1 and 2",
+    "massKg": 30, "outputW": 70, "degradationPctPerDay": 0.005, "coldProtectionC": 30,
+    "name": { "en": "SNAP-19 RTG", "pt": "RTG SNAP-19", "es": "RTG SNAP-19", "fr": "RTG SNAP-19" },
+    "description": {
+      "en": "Nuclear (radioisotope) generator. Power day and night; its waste heat helps keep the probe warm.",
+      "pt": "Gerador nuclear (radioisótopo). Energia dia e noite; o calor residual ajuda a aquecer a sonda.",
+      "es": "Generador nuclear (radioisótopo). Energía día y noche; su calor residual ayuda a calentar la sonda.",
+      "fr": "Générateur nucléaire (radio-isotope). De l'énergie jour et nuit ; sa chaleur résiduelle aide à réchauffer la sonde."
+    }
+  },
+  {
+    "id": "mmrtg", "category": "Power", "inspiration": "Curiosity, Perseverance",
+    "massKg": 45, "outputW": 110, "degradationPctPerDay": 0.011, "coldProtectionC": 30,
+    "name": { "en": "MMRTG", "pt": "MMRTG", "es": "MMRTG", "fr": "MMRTG" },
+    "description": {
+      "en": "Modern nuclear generator. Heavy and expensive, but independent of sunlight and dust.",
+      "pt": "Gerador nuclear moderno. Pesado e caro, mas independente de luz e poeira.",
+      "es": "Generador nuclear moderno. Pesado y caro, pero independiente de la luz y del polvo.",
+      "fr": "Générateur nucléaire moderne. Lourd et coûteux, mais indépendant de la lumière et de la poussière."
+    }
+  },
+
+  {
+    "id": "no-battery", "category": "Storage", "inspiration": "-", "massKg": 0, "capacityWh": 0,
+    "name": { "en": "No battery", "pt": "Sem bateria", "es": "Sin batería", "fr": "Aucune batterie" },
+    "description": {
+      "en": "No energy storage: no power in the dark.",
+      "pt": "Nenhum armazenamento: sem energia no escuro.",
+      "es": "Sin almacenamiento: no hay energía en la oscuridad.",
+      "fr": "Aucun stockage : pas d'énergie dans l'obscurité."
+    }
+  },
+  {
+    "id": "silver-zinc-primary", "category": "Storage", "inspiration": "Apollo LM and LRV",
+    "massKg": 60, "capacityWh": 25000, "rechargeable": false, "minTempC": -10, "maxTempC": 50,
+    "name": { "en": "Silver-zinc battery (primary)", "pt": "Bateria prata-zinco (primária)", "es": "Batería de plata-zinc (primaria)", "fr": "Batterie argent-zinc (primaire)" },
+    "description": {
+      "en": "Lots of energy, but it cannot be recharged: once it runs out, it's over.",
+      "pt": "Muita energia, mas não recarrega: quando acaba, acabou.",
+      "es": "Mucha energía, pero no se recarga: cuando se agota, se acabó.",
+      "fr": "Beaucoup d'énergie, mais non rechargeable : une fois vide, c'est fini."
+    }
+  },
+  {
+    "id": "silver-zinc-rechargeable", "category": "Storage", "inspiration": "Mars Pathfinder, Surveyor",
+    "massKg": 8, "capacityWh": 600, "degradationPctPerDay": 1.15, "minTempC": -20, "maxTempC": 50,
+    "name": { "en": "Silver-zinc battery (rechargeable)", "pt": "Bateria prata-zinco (recarregável)", "es": "Batería de plata-zinc (recargable)", "fr": "Batterie argent-zinc (rechargeable)" },
+    "description": {
+      "en": "Rechargeable, but it degrades quickly with every cycle.",
+      "pt": "Recarregável, porém se degrada rápido a cada ciclo.",
+      "es": "Recargable, pero se degrada rápido con cada ciclo.",
+      "fr": "Rechargeable, mais elle se dégrade vite à chaque cycle."
+    }
+  },
+  {
+    "id": "nickel-cadmium", "category": "Storage", "inspiration": "Viking",
+    "massKg": 20, "capacityWh": 800, "degradationPctPerDay": 0.002, "minTempC": -20, "maxTempC": 50,
+    "name": { "en": "Nickel-cadmium battery", "pt": "Bateria níquel-cádmio", "es": "Batería de níquel-cadmio", "fr": "Batterie nickel-cadmium" },
+    "description": {
+      "en": "Rugged and long-lasting, but heavy.",
+      "pt": "Robusta e de longa duração, porém pesada.",
+      "es": "Robusta y duradera, pero pesada.",
+      "fr": "Robuste et durable, mais lourde."
+    }
+  },
+  {
+    "id": "lithium-ion", "category": "Storage", "inspiration": "MER, InSight, Perseverance, Ingenuity",
+    "massKg": 7, "capacityWh": 1200, "degradationPctPerDay": 0.01, "minTempC": -30, "maxTempC": 60,
+    "name": { "en": "Lithium-ion battery", "pt": "Bateria de íons de lítio", "es": "Batería de iones de litio", "fr": "Batterie lithium-ion" },
+    "description": {
+      "en": "Light and efficient; suffers in extreme cold.",
+      "pt": "Leve e eficiente; sofre com frio extremo.",
+      "es": "Ligera y eficiente; sufre con el frío extremo.",
+      "fr": "Légère et efficace ; souffre du froid extrême."
+    }
+  },
+
+  {
+    "id": "no-thermal-protection", "category": "Thermal", "inspiration": "-", "massKg": 0,
+    "name": { "en": "No thermal protection", "pt": "Sem proteção térmica", "es": "Sin protección térmica", "fr": "Aucune protection thermique" },
+    "description": {
+      "en": "The electronics are exposed to the outside temperature.",
+      "pt": "A eletrônica fica exposta às temperaturas externas.",
+      "es": "La electrónica queda expuesta a la temperatura exterior.",
+      "fr": "L'électronique est exposée à la température extérieure."
+    }
+  },
+  {
+    "id": "mli", "category": "Thermal", "inspiration": "Apollo, Viking, InSight",
+    "massKg": 3, "coldProtectionC": 70, "heatProtectionC": 60,
+    "name": { "en": "Multi-layer insulation (MLI)", "pt": "Isolamento multicamadas (MLI)", "es": "Aislamiento multicapa (MLI)", "fr": "Isolation multicouche (MLI)" },
+    "description": {
+      "en": "A blanket of metallized layers. Protects from cold and heat without using power.",
+      "pt": "Cobertor de camadas metalizadas. Protege do frio e do calor sem gastar energia.",
+      "es": "Manta de capas metalizadas. Protege del frío y del calor sin gastar energía.",
+      "fr": "Couverture de couches métallisées. Protège du froid et de la chaleur sans consommer d'énergie."
+    }
+  },
+  {
+    "id": "rhu", "category": "Thermal", "inspiration": "Spirit, Opportunity, Sojourner",
+    "massKg": 1, "coldProtectionC": 80, "heatProtectionC": -20,
+    "name": { "en": "Radioisotope heater units (RHU)", "pt": "Aquecedores de radioisótopo (RHU)", "es": "Calentadores de radioisótopos (RHU)", "fr": "Unités de chauffage à radio-isotopes (RHU)" },
+    "description": {
+      "en": "Plutonium pellets that give off constant heat. Great in the cold, bad in the heat.",
+      "pt": "Pastilhas de plutônio que geram calor contínuo. Ótimo no frio, ruim no calor.",
+      "es": "Pastillas de plutonio que generan calor continuo. Excelentes en el frío, malas con el calor.",
+      "fr": "Pastilles de plutonium qui dégagent une chaleur constante. Idéal par grand froid, mauvais par forte chaleur."
+    }
+  },
+  {
+    "id": "electric-heater", "category": "Thermal", "inspiration": "Ingenuity",
+    "massKg": 0.5, "coldProtectionC": 70, "nightConsumptionW": 10,
+    "name": { "en": "Electric heater", "pt": "Aquecedor elétrico", "es": "Calentador eléctrico", "fr": "Chauffage électrique" },
+    "description": {
+      "en": "Heats well, but drains the battery at night.",
+      "pt": "Aquece bem, mas consome bateria durante a noite.",
+      "es": "Calienta bien, pero consume batería durante la noche.",
+      "fr": "Chauffe bien, mais vide la batterie la nuit."
+    }
+  },
+  {
+    "id": "radiator", "category": "Thermal", "inspiration": "Lunar stations and landers",
+    "massKg": 4, "heatProtectionC": 100,
+    "name": { "en": "Thermal radiator", "pt": "Radiador térmico", "es": "Radiador térmico", "fr": "Radiateur thermique" },
+    "description": {
+      "en": "Dumps heat into space. Excellent against heat, useless in the cold.",
+      "pt": "Joga calor para o espaço. Excelente contra o calor, inútil no frio.",
+      "es": "Expulsa el calor al espacio. Excelente contra el calor, inútil en el frío.",
+      "fr": "Évacue la chaleur vers l'espace. Excellent contre la chaleur, inutile par grand froid."
+    }
+  },
+
+  {
+    "id": "landing-legs", "category": "Mobility", "inspiration": "Apollo, Viking and InSight landers", "massKg": 10,
+    "name": { "en": "Landing legs (stationary)", "pt": "Pernas de pouso (estacionário)", "es": "Patas de aterrizaje (estacionario)", "fr": "Jambes d'atterrissage (stationnaire)" },
+    "description": {
+      "en": "Does not move. Zero power use, zero wear.",
+      "pt": "Não se move. Zero consumo, zero desgaste.",
+      "es": "No se mueve. Cero consumo, cero desgaste.",
+      "fr": "Ne bouge pas. Zéro consommation, zéro usure."
+    }
+  },
+  {
+    "id": "steel-mesh-wheels", "category": "Mobility", "inspiration": "Lunar Roving Vehicle (Apollo 15-17)",
+    "massKg": 40, "consumptionW": 30, "serviceLifeDays": 30,
+    "name": { "en": "Steel/titanium mesh wheels", "pt": "Rodas de malha de aço/titânio", "es": "Ruedas de malla de acero/titanio", "fr": "Roues à maillage acier/titane" },
+    "description": {
+      "en": "Fast and light, built for a few days of crewed use.",
+      "pt": "Rápidas e leves, feitas para poucos dias de uso tripulado.",
+      "es": "Rápidas y ligeras, hechas para pocos días de uso tripulado.",
+      "fr": "Rapides et légères, conçues pour quelques jours d'utilisation habitée."
+    }
+  },
+  {
+    "id": "aluminum-wheels", "category": "Mobility", "inspiration": "Sojourner",
+    "massKg": 5, "consumptionW": 5, "serviceLifeDays": 400,
+    "name": { "en": "Simple aluminum wheels", "pt": "Rodas de alumínio simples", "es": "Ruedas simples de aluminio", "fr": "Roues simples en aluminium" },
+    "description": {
+      "en": "Small, light rover, ideal for short distances.",
+      "pt": "Rover pequeno e leve, ideal para distâncias curtas.",
+      "es": "Rover pequeño y ligero, ideal para distancias cortas.",
+      "fr": "Petit rover léger, idéal pour de courtes distances."
+    }
+  },
+  {
+    "id": "rocker-bogie-aluminum", "category": "Mobility", "inspiration": "Spirit, Opportunity",
+    "massKg": 25, "consumptionW": 8, "serviceLifeDays": 3000,
+    "name": { "en": "Rocker-bogie suspension (aluminum)", "pt": "Suspensão rocker-bogie (alumínio)", "es": "Suspensión rocker-bogie (aluminio)", "fr": "Suspension rocker-bogie (aluminium)" },
+    "description": {
+      "en": "Six independent wheels that climb over rocks and uneven ground.",
+      "pt": "Seis rodas independentes que vencem pedras e desníveis.",
+      "es": "Seis ruedas independientes que superan rocas y desniveles.",
+      "fr": "Six roues indépendantes qui franchissent rochers et dénivelés."
+    }
+  },
+  {
+    "id": "rocker-bogie-titanium", "category": "Mobility", "inspiration": "Curiosity, Perseverance",
+    "massKg": 60, "consumptionW": 10, "serviceLifeDays": 6000,
+    "name": { "en": "Rocker-bogie suspension (titanium)", "pt": "Suspensão rocker-bogie (titânio)", "es": "Suspensión rocker-bogie (titanio)", "fr": "Suspension rocker-bogie (titane)" },
+    "description": {
+      "en": "Reinforced version: heavier and far more durable.",
+      "pt": "Versão reforçada, mais pesada e muito mais durável.",
+      "es": "Versión reforzada: más pesada y mucho más duradera.",
+      "fr": "Version renforcée : plus lourde et bien plus durable."
+    }
+  },
+  {
+    "id": "carbon-fiber-rotor", "category": "Mobility", "inspiration": "Ingenuity",
+    "massKg": 1, "consumptionW": 6, "serviceLifeDays": 1020,
+    "name": { "en": "Carbon fiber coaxial rotor", "pt": "Rotor coaxial de fibra de carbono", "es": "Rotor coaxial de fibra de carbono", "fr": "Rotor coaxial en fibre de carbone" },
+    "description": {
+      "en": "Lets you fly in the thin Martian air. Does not work without an atmosphere.",
+      "pt": "Permite voar na atmosfera fina de Marte. Não funciona sem atmosfera.",
+      "es": "Permite volar en la atmósfera delgada de Marte. No funciona sin atmósfera.",
+      "fr": "Permet de voler dans l'atmosphère ténue de Mars. Ne fonctionne pas sans atmosphère."
+    }
+  },
+
+  {
+    "id": "s-band", "category": "Communication", "inspiration": "Apollo, Surveyor, Viking",
+    "massKg": 8, "consumptionW": 20,
+    "name": { "en": "S-band radio (direct to Earth)", "pt": "Rádio banda S (direto à Terra)", "es": "Radio banda S (directo a la Tierra)", "fr": "Radio bande S (direct vers la Terre)" },
+    "description": {
+      "en": "Talks straight to Earth. Simple, but uses more power.",
+      "pt": "Fala direto com a Terra. Simples, mas gasta mais energia.",
+      "es": "Habla directamente con la Tierra. Sencilla, pero gasta más energía.",
+      "fr": "Communique directement avec la Terre. Simple, mais consomme plus d'énergie."
+    }
+  },
+  {
+    "id": "x-band", "category": "Communication", "inspiration": "Mars Pathfinder",
+    "massKg": 6, "consumptionW": 15,
+    "name": { "en": "X-band high-gain antenna", "pt": "Antena banda X de alto ganho", "es": "Antena de alta ganancia banda X", "fr": "Antenne grand gain bande X" },
+    "description": {
+      "en": "More data with less power, direct to Earth.",
+      "pt": "Mais dados com menos energia, direto à Terra.",
+      "es": "Más datos con menos energía, directo a la Tierra.",
+      "fr": "Plus de données avec moins d'énergie, en direct vers la Terre."
+    }
+  },
+  {
+    "id": "uhf-relay", "category": "Communication", "inspiration": "MER, InSight, Perseverance",
+    "massKg": 3, "consumptionW": 8, "needsRelayOrbiter": true,
+    "name": { "en": "UHF radio via orbiter relay", "pt": "Rádio UHF via orbitador", "es": "Radio UHF vía orbitador", "fr": "Radio UHF via orbiteur relais" },
+    "description": {
+      "en": "Power-efficient, but needs a satellite orbiting the destination to relay the signal.",
+      "pt": "Econômico, mas precisa de um satélite orbitando o destino para retransmitir.",
+      "es": "Económica, pero necesita un satélite en órbita del destino para retransmitir.",
+      "fr": "Économe, mais a besoin d'un satellite en orbite autour de la destination pour relayer le signal."
+    }
+  },
+
+  {
+    "id": "agc", "category": "Computer", "inspiration": "Apollo LM",
+    "massKg": 32, "consumptionW": 55, "minTempC": -10, "maxTempC": 70, "radiationTolerance": 8,
+    "name": { "en": "Apollo Guidance Computer", "pt": "Apollo Guidance Computer", "es": "Apollo Guidance Computer", "fr": "Apollo Guidance Computer" },
+    "description": {
+      "en": "Core rope memory, very rugged; uses a lot of power.",
+      "pt": "Memória de núcleo trançado, muito resistente; consome bastante energia.",
+      "es": "Memoria de núcleos trenzados, muy resistente; consume mucha energía.",
+      "fr": "Mémoire à tores tressés, très robuste ; consomme beaucoup d'énergie."
+    }
+  },
+  {
+    "id": "command-sequencer", "category": "Computer", "inspiration": "Surveyor, Viking",
+    "massKg": 10, "consumptionW": 5, "minTempC": -20, "maxTempC": 60, "radiationTolerance": 9,
+    "name": { "en": "Command sequencer", "pt": "Sequenciador de comandos", "es": "Secuenciador de comandos", "fr": "Séquenceur de commandes" },
+    "description": {
+      "en": "Simple electronics that run a list of commands. Rugged and power-efficient.",
+      "pt": "Eletrônica simples que executa uma lista de comandos. Robusta e econômica.",
+      "es": "Electrónica simple que ejecuta una lista de comandos. Robusta y económica.",
+      "fr": "Électronique simple qui exécute une liste de commandes. Robuste et économe."
+    }
+  },
+  {
+    "id": "rad6000", "category": "Computer", "inspiration": "Pathfinder, Spirit, Opportunity",
+    "massKg": 3, "consumptionW": 10, "minTempC": -40, "maxTempC": 70, "radiationTolerance": 9,
+    "name": { "en": "RAD6000", "pt": "RAD6000", "es": "RAD6000", "fr": "RAD6000" },
+    "description": {
+      "en": "Radiation-hardened processor.",
+      "pt": "Processador endurecido contra radiação.",
+      "es": "Procesador endurecido contra la radiación.",
+      "fr": "Processeur durci contre les radiations."
+    }
+  },
+  {
+    "id": "rad750", "category": "Computer", "inspiration": "Curiosity, InSight, Perseverance",
+    "massKg": 3, "consumptionW": 15, "minTempC": -40, "maxTempC": 70, "radiationTolerance": 10,
+    "name": { "en": "RAD750", "pt": "RAD750", "es": "RAD750", "fr": "RAD750" },
+    "description": {
+      "en": "Successor to the RAD6000: faster and even more radiation-tolerant.",
+      "pt": "Sucessor do RAD6000: mais rápido e ainda mais resistente.",
+      "es": "Sucesor del RAD6000: más rápido y aún más resistente.",
+      "fr": "Successeur du RAD6000 : plus rapide et encore plus résistant."
+    }
+  },
+  {
+    "id": "snapdragon", "category": "Computer", "inspiration": "Ingenuity",
+    "massKg": 0.1, "consumptionW": 5, "minTempC": -40, "maxTempC": 85, "radiationTolerance": 3,
+    "name": { "en": "Commercial processor (Snapdragon)", "pt": "Processador comercial (Snapdragon)", "es": "Procesador comercial (Snapdragon)", "fr": "Processeur commercial (Snapdragon)" },
+    "description": {
+      "en": "Very fast, light and efficient, but sensitive to radiation.",
+      "pt": "Muito rápido, leve e econômico, mas sensível à radiação.",
+      "es": "Muy rápido, ligero y económico, pero sensible a la radiación.",
+      "fr": "Très rapide, léger et économe, mais sensible aux radiations."
+    }
+  }
+]

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/api-1-vlibras/">
+    <Project Path="api-1-vlibras/Api1.VLibras.csproj" />
+  </Folder>
+  <Folder Name="/api-2-speech/">
+    <Project Path="api-2-speech/Api2.Speech.csproj" />
+  </Folder>
+  <Folder Name="/backend/">
+    <Project Path="backend/Backend.csproj" />
+  </Folder>
+</Solution>

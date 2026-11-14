@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Museu das Sondas da NASA",
+    "subtitle": "Explore sondas em uso e descartadas, missões da NASA, o hardware delas e teste seus próprios projetos."
+  },
+  "language": { "label": "Idioma" },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Algo deu errado",
+    "listen": "Ouvir",
+    "stop": "Parar",
+    "libras": "Traduzir para Libras"
+  },
+  "services": { "title": "Status dos serviços" },
+  "probes": {
+    "title": "Sondas ({{count}})",
+    "launch": "Lançamento",
+    "landing": "Pouso",
+    "location": "Localização",
+    "function": "Objetivo científico",
+    "reuse": "Reutilização mecânica",
+    "source": "Fonte"
+  },
+  "destination": { "Moon": "Lua", "Mars": "Marte" },
+  "status": { "Active": "Ativa", "Inactive": "Inativa" },
+  "type": { "Lander": "Módulo de pouso", "Rover": "Rover", "Helicopter": "Helicóptero", "LanderWithRover": "Módulo de pouso com rover" },
+  "category": {
+    "Power": "Energia",
+    "Storage": "Armazenamento",
+    "Thermal": "Térmico",
+    "Mobility": "Mobilidade",
+    "Communication": "Comunicação",
+    "Computer": "Computador"
+  },
+  "simulation": {
+    "title": "Simulação",
+    "run": "Lançar missão",
+    "daysSurvived": "Dias sobrevividos",
+    "planned": "Planejado",
+    "actual": "Sonda real",
+    "score": "Pontuação",
+    "accomplished": "Missão cumprida!",
+    "failed": "Missão fracassou"
+  }
+}

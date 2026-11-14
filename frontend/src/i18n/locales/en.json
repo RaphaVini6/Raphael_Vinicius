@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "NASA Probes Museum",
+    "subtitle": "Explore active and retired probes, NASA missions, their hardware, and test your own designs."
+  },
+  "language": { "label": "Language" },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "listen": "Listen",
+    "stop": "Stop",
+    "libras": "Translate to Libras"
+  },
+  "services": { "title": "Service status" },
+  "probes": {
+    "title": "Probes ({{count}})",
+    "launch": "Launch",
+    "landing": "Landing",
+    "location": "Location",
+    "function": "Scientific goal",
+    "reuse": "Mechanical reuse",
+    "source": "Source"
+  },
+  "destination": { "Moon": "Moon", "Mars": "Mars" },
+  "status": { "Active": "Active", "Inactive": "Inactive" },
+  "type": { "Lander": "Lander", "Rover": "Rover", "Helicopter": "Helicopter", "LanderWithRover": "Lander with rover" },
+  "category": {
+    "Power": "Power",
+    "Storage": "Storage",
+    "Thermal": "Thermal",
+    "Mobility": "Mobility",
+    "Communication": "Communication",
+    "Computer": "Computer"
+  },
+  "simulation": {
+    "title": "Simulation",
+    "run": "Launch mission",
+    "daysSurvived": "Days survived",
+    "planned": "Planned",
+    "actual": "Real probe",
+    "score": "Score",
+    "accomplished": "Mission accomplished!",
+    "failed": "Mission failed"
+  }
+}

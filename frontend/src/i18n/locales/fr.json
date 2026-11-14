@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Musée des sondes de la NASA",
+    "subtitle": "Découvrez les sondes actives et retirées, les missions de la NASA, leur matériel, et testez vos propres conceptions."
+  },
+  "language": { "label": "Langue" },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "listen": "Écouter",
+    "stop": "Arrêter",
+    "libras": "Traduire en Libras"
+  },
+  "services": { "title": "État des services" },
+  "probes": {
+    "title": "Sondes ({{count}})",
+    "launch": "Lancement",
+    "landing": "Atterrissage",
+    "location": "Emplacement",
+    "function": "Objectif scientifique",
+    "reuse": "Réutilisation mécanique",
+    "source": "Source"
+  },
+  "destination": { "Moon": "Lune", "Mars": "Mars" },
+  "status": { "Active": "Active", "Inactive": "Inactive" },
+  "type": { "Lander": "Atterrisseur", "Rover": "Rover", "Helicopter": "Hélicoptère", "LanderWithRover": "Atterrisseur avec rover" },
+  "category": {
+    "Power": "Énergie",
+    "Storage": "Stockage",
+    "Thermal": "Thermique",
+    "Mobility": "Mobilité",
+    "Communication": "Communication",
+    "Computer": "Ordinateur"
+  },
+  "simulation": {
+    "title": "Simulation",
+    "run": "Lancer la mission",
+    "daysSurvived": "Jours de survie",
+    "planned": "Prévu",
+    "actual": "Vraie sonde",
+    "score": "Score",
+    "accomplished": "Mission accomplie !",
+    "failed": "Mission échouée"
+  }
+}
