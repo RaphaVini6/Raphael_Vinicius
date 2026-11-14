@@ -1,0 +1,22 @@
+# homologation / production overrides
+# docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+services:
+  backend:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+    # the backend is only reached through the frontend (nginx), so no public port
+    ports: !reset []
+    restart: always
+
+  api-1-vlibras:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+    restart: always
+
+  api-2-speech:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+    restart: always
+
+  frontend:
+    restart: always

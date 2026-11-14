@@ -1,0 +1,7 @@
+bin/
+obj/
+audio-cache/
+.env
+*.user
+Dockerfile
+.dockerignore

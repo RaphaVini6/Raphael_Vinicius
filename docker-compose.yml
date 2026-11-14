@@ -1,0 +1,54 @@
+name: spacy-legacy
+
+# docker compose up --build
+# site: http://localhost:8080   api docs (Development only): http://localhost:5000/scalar
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+      # inside the docker network the services find each other by name
+      Apis__VLibras__BaseUrl: http://api-1-vlibras:8080
+      Apis__Speech__BaseUrl: http://api-2-speech:8080
+    ports:
+      - "${BACKEND_PORT:-5000}:8080"
+    depends_on:
+      - api-1-vlibras
+      - api-2-speech
+    restart: unless-stopped
+
+  api-1-vlibras:
+    build: ./api-1-vlibras
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+    restart: unless-stopped
+
+  api-2-speech:
+    build: ./api-2-speech
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+      Speech__CacheDir: /data/audio-cache
+    volumes:
+      - speech-cache:/data
+    restart: unless-stopped
+
+volumes:
+  # keeps generated audio between restarts (the Knowlez trial only has 50 requests)
+  speech-cache:
