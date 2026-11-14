@@ -13,8 +13,8 @@ public class NarrationService
 
         var sb = new StringBuilder();
         sb.Append(M("nar.intro", p.Name.Get(lang), M($"nar.type.{p.Type}"), p.Mission.Get(lang), M($"nar.dest.{p.Destination}"))).Append(' ');
-        sb.Append(M("nar.dates", Date(p.Launch, lang), Date(p.Landing, lang))).Append(' ');
-        sb.Append(p.Status == ProbeStatus.Active ? M("nar.active") : M("nar.inactive", p.StatusDetail.Get(lang))).Append(' ');
+        sb.Append(M("nar.dates", Date(p.Launch, lang), M($"nar.dateKind.{p.DateKind}"), Date(p.Date, lang))).Append(' ');
+        sb.Append(p.Status switch { ProbeStatus.Active => M("nar.active"), ProbeStatus.Lost => M("nar.lost", p.StatusDetail.Get(lang)), _ => M("nar.inactive", p.StatusDetail.Get(lang)) }).Append(' ');
         sb.Append(M("nar.location", p.Location.Get(lang))).Append(' ');
         sb.Append(M("nar.function", p.Function.Get(lang))).Append(' ');
         sb.Append(M("nar.reuse", p.MechanicalReuse.Get(lang))).Append(' ');

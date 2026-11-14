@@ -1,0 +1,80 @@
+[
+  {
+    "id": "near-shoemaker",
+    "name": { "en": "NEAR Shoemaker" },
+    "equipment": { "en": "NEAR Shoemaker spacecraft", "pt": "Sonda NEAR Shoemaker", "es": "Sonda NEAR Shoemaker", "fr": "Sonde NEAR Shoemaker" },
+    "mission": { "en": "NEAR Shoemaker (Discovery Program)", "pt": "NEAR Shoemaker (Programa Discovery)", "es": "NEAR Shoemaker (Programa Discovery)", "fr": "NEAR Shoemaker (programme Discovery)" },
+    "destination": "Asteroid", "type": "SpaceProbe",
+    "launch": "1996-02-17", "date": "2001-02-12", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Last contact on February 28, 2001.", "pt": "Último contato em 28 de fevereiro de 2001.", "es": "Último contacto el 28 de febrero de 2001.", "fr": "Dernier contact le 28 février 2001." },
+    "location": { "en": "Surface of asteroid 433 Eros (south of Himeros)", "pt": "Superfície do asteroide 433 Eros (ao sul de Himeros)", "es": "Superficie del asteroide 433 Eros (al sur de Himeros)", "fr": "Surface de l'astéroïde 433 Éros (au sud d'Himeros)" },
+    "function": {
+      "en": "First spacecraft to orbit and land on an asteroid, measuring its shape, mass and the absence of a magnetic field.",
+      "pt": "Primeiro orbitador e pousador em um asteroide, medindo morfologia, massa e ausência de campo magnético.",
+      "es": "Primera sonda en orbitar y aterrizar en un asteroide, midiendo su morfología, masa y la ausencia de campo magnético.",
+      "fr": "Première sonde à orbiter et à se poser sur un astéroïde, en mesurant sa morphologie, sa masse et l'absence de champ magnétique."
+    },
+    "mechanicalReuse": {
+      "en": "Serves as a mechanical calibration beacon and fixed navigation point for future mining missions on Eros.",
+      "pt": "Serve como baliza de calibração mecânica e ponto fixo de navegação para futuras missões de mineração no asteroide Eros.",
+      "es": "Sirve como baliza de calibración mecánica y punto fijo de navegación para futuras misiones de minería en Eros.",
+      "fr": "Sert de balise d'étalonnage mécanique et de point fixe de navigation pour de futures missions minières sur Éros."
+    },
+    "source": { "name": "NASA Science - NEAR Shoemaker", "nssdcaId": "1996-008A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/near-shoemaker.webp", "imageCredit": "NASA/JPL/JHUAPL (PIA03143)"
+  },
+  {
+    "id": "pioneer-10",
+    "name": { "en": "Pioneer 10" },
+    "equipment": { "en": "Pioneer 10 spacecraft (Pioneer-F)", "pt": "Sonda Pioneer 10 (Pioneer-F)", "es": "Sonda Pioneer 10 (Pioneer-F)", "fr": "Sonde Pioneer 10 (Pioneer-F)" },
+    "mission": { "en": "Pioneer 10" },
+    "destination": "DeepSpace", "type": "SpaceProbe",
+    "launch": "1972-03-02", "date": "1973-12-04", "dateKind": "JupiterFlyby",
+    "status": "Inactive",
+    "statusDetail": { "en": "Last signal received on January 23, 2003.", "pt": "Último sinal recebido em 23 de janeiro de 2003.", "es": "Última señal recibida el 23 de enero de 2003.", "fr": "Dernier signal reçu le 23 janvier 2003." },
+    "location": { "en": "Escaping the Solar System toward the star Aldebaran (~118.8 AU)", "pt": "Trajetória de escape do Sistema Solar rumo à estrela Aldebaran (~118,8 UA)", "es": "Trayectoria de escape del Sistema Solar rumbo a la estrella Aldebarán (~118,8 UA)", "fr": "Trajectoire d'évasion du Système solaire vers l'étoile Aldébaran (~118,8 UA)" },
+    "function": {
+      "en": "First crossing of the asteroid belt, Jupiter flyby and carrier of a commemorative plaque.",
+      "pt": "Primeira travessia do cinturão de asteroides, voo por Júpiter e transporte de placa memorial comemorativa.",
+      "es": "Primera travesía del cinturón de asteroides, sobrevuelo de Júpiter y transporte de una placa conmemorativa.",
+      "fr": "Première traversée de la ceinture d'astéroïdes, survol de Jupiter et transport d'une plaque commémorative."
+    },
+    "mechanicalReuse": {
+      "en": "Acts as a physical interstellar time capsule carrying the engraved aluminum plaque with data about Earth.",
+      "pt": "Atua como cápsula do tempo física interestelar contendo a placa de alumínio gravada com dados da Terra.",
+      "es": "Actúa como cápsula del tiempo interestelar con la placa de aluminio grabada con datos de la Tierra.",
+      "fr": "Joue le rôle de capsule temporelle interstellaire, avec la plaque d'aluminium gravée de données sur la Terre."
+    },
+    "source": { "name": "NASA Science - Pioneer 10", "nssdcaId": "1972-012A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/pioneer-10.webp"
+  },
+  {
+    "id": "kepler",
+    "name": { "en": "Kepler Space Telescope", "pt": "Telescópio Espacial Kepler", "es": "Telescopio espacial Kepler", "fr": "Télescope spatial Kepler" },
+    "equipment": { "en": "Kepler Space Telescope (K2 mission)", "pt": "Telescópio Espacial Kepler (Missão K2)", "es": "Telescopio espacial Kepler (misión K2)", "fr": "Télescope spatial Kepler (mission K2)" },
+    "mission": { "en": "Kepler / K2" },
+    "destination": "DeepSpace", "type": "Telescope",
+    "launch": "2009-03-06", "date": "2018-10-30", "dateKind": "Retirement",
+    "status": "Inactive",
+    "statusDetail": { "en": "Retired in a safe heliocentric orbit.", "pt": "Aposentado em órbita heliocêntrica segura.", "es": "Retirado en una órbita heliocéntrica segura.", "fr": "Retiré sur une orbite héliocentrique sûre." },
+    "location": { "en": "Heliocentric orbit, far from Earth", "pt": "Órbita heliocêntrica distante da Terra", "es": "Órbita heliocéntrica lejos de la Tierra", "fr": "Orbite héliocentrique, loin de la Terre" },
+    "function": {
+      "en": "Discovered more than 2,600 exoplanets using the transit method.",
+      "pt": "Descoberta de mais de 2.600 exoplanetas pelo método de trânsito estelar.",
+      "es": "Descubrió más de 2.600 exoplanetas mediante el método de tránsito.",
+      "fr": "A découvert plus de 2 600 exoplanètes par la méthode des transits."
+    },
+    "mechanicalReuse": {
+      "en": "Operational engineering reuse: during K2 it used the pressure of sunlight on its body as a 'rudder' to keep its pointing. In orbit, it is an inert target for deep-survey telescope detection tests.",
+      "pt": "Reutilização operacional de engenharia: utilizou a pressão dos fótons da luz solar contra sua carcaça como leme para manter o apontamento durante a missão K2. Em órbita, serve de alvo inerte para testes de detecção de telescópios de varredura profunda.",
+      "es": "Reutilización operativa de ingeniería: durante K2 usó la presión de la luz solar sobre su estructura como timón para mantener el apuntamiento. En órbita, es un blanco inerte para pruebas de detección de telescopios de rastreo profundo.",
+      "fr": "Réutilisation opérationnelle : pendant K2, il a utilisé la pression de la lumière solaire sur sa coque comme gouvernail pour garder son pointage. En orbite, il sert de cible inerte pour tester la détection des télescopes de relevé profond."
+    },
+    "source": { "name": "NASA Science - Kepler / K2", "nssdcaId": "2009-011A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/kepler.webp"
+  }
+]

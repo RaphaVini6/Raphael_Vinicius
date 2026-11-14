@@ -34,7 +34,12 @@ public record PlanetaryEnvironment(
             ["fr"] = "Atmosphère ténue de CO2, sol de 24,6 heures, nuits glaciales, poussière qui recouvre les panneaux et tempêtes globales.",
         });
 
-    public static PlanetaryEnvironment Of(Destination d) => d == Destination.Moon ? Moon : Mars;
+    public static PlanetaryEnvironment Of(Destination d) => d switch
+    {
+        Destination.Moon => Moon,
+        Destination.Mars => Mars,
+        _ => throw new ArgumentException($"No surface environment for {d}"),
+    };
 
     public object ToDto(string lang) => new
     {

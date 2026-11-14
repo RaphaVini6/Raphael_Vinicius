@@ -5,15 +5,17 @@ import { LANGUAGES } from '../i18n'
 export default function LanguageSwitcher() {
   const { t, i18n } = useTranslation()
   return (
-    <label className="language-switcher">
-      <span>{t('language.label')}</span>
-      <select value={i18n.resolvedLanguage} onChange={(e) => i18n.changeLanguage(e.target.value)}>
+    <>
+      <label htmlFor="language" className="sr-only">
+        {t('language.label')}
+      </label>
+      <select id="language" className="select" value={i18n.resolvedLanguage} onChange={(e) => i18n.changeLanguage(e.target.value)}>
         {LANGUAGES.map((l) => (
           <option key={l.code} value={l.code} lang={l.code}>
             {l.label}
           </option>
         ))}
       </select>
-    </label>
+    </>
   )
 }
