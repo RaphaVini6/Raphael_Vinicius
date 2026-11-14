@@ -5,6 +5,9 @@ using Scalar.AspNetCore;
 
 // Proxy for the VLibras translator (Portuguese -> Libras gloss). Docs: https://www.gov.br/conecta/catalogo/apis/vlibras
 
+// load the nearest .env (repo root) without overriding real environment variables
+DotNetEnv.Env.NoClobber().TraversePath().Load();
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddMemoryCache();

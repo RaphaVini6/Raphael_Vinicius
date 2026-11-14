@@ -5,6 +5,9 @@ using Backend.Services;
 using Microsoft.AspNetCore.Localization;
 using Scalar.AspNetCore;
 
+// load the nearest .env (repo root) without overriding real environment variables
+DotNetEnv.Env.NoClobber().TraversePath().Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()

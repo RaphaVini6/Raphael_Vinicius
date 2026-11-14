@@ -4,6 +4,9 @@ using Scalar.AspNetCore;
 // TTS for blind users. Engines are tried in order: Knowlez -> Azure -> Windows.
 // Results are cached in audio-cache/ (the Knowlez trial only has 50 requests).
 
+// load the nearest .env (repo root) without overriding real environment variables
+DotNetEnv.Env.NoClobber().TraversePath().Load();
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 

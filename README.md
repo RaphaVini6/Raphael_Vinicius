@@ -31,15 +31,30 @@ cd frontend && npm install && npm run dev
 
 Open http://localhost:5173. API docs: http://localhost:5000/scalar
 
-### API keys
+### Configuration (.env)
 
-The speech API key is not in the repo. Set it with user-secrets:
+All settings live in a single `.env` file in the repo root, read by the three .NET projects and by Vite.
+`.env` is not committed; copy the template and fill in the keys:
 
 ```bash
-dotnet user-secrets set "Speech:Knowlez:Key" "<key>" --project api-2-speech
+cp .env.example .env
 ```
 
-(on a server use the env var `Speech__Knowlez__Key`). Without a key, api-2 falls back to the Windows voices.
+The speech key (`Speech__Knowlez__Key`) is not in the repo - ask the team. Without it, api-2 falls back to
+the Windows voices. Real environment variables always win over the `.env` file.
+
+## Branches
+
+| Branch | Use |
+|---|---|
+| `master` | stable code |
+| `dev` | development - open your feature branches from here |
+| `homologa` | staging / testing before release |
+| `prod` | what is deployed |
+
+Anyone can create branches (e.g. `feature/simulation-screen`). Merging into `master`, `dev`, `homologa`
+or `prod` only happens through a pull request approved by @RaphaVini6 (see `.github/CODEOWNERS`).
+Flow: `feature/*` -> `dev` -> `homologa` -> `prod`, and `prod` -> `master`.
 
 ## Languages
 
