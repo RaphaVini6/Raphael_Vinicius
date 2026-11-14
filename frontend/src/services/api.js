@@ -42,12 +42,17 @@ export const translateProbeToLibras = (id) => get(`/libras/probes/${id}`)
 
 // audio narration (blind users). *Url can go straight into <audio src>
 export const probeAudioUrl = (id, rate = 0) => `${API_URL}/audio/probes/${id}?rate=${rate}&lang=${lang()}`
-export const getProbeNarration = (id) => get(`/audio/probes/${id}/text`)
-export const getSimulationNarration = (req) => post('/audio/simulation/text', req)
-const audioBlob = (url, body) => api.post(url, body, { responseType: 'blob' }).then((r) => URL.createObjectURL(r.data))
+export const getProbeNarration = (id) => get(`/audio/probes/${id}/text`).then((r) => r.text)
+export const getSimulationNarration = (req) => post('/audio/simulation/text', req).then((r) => r.text)
+const audioBlob = (url, body) => api.post(url, body, { responseType: 'blob', timeout: 60000 }).then((r) => URL.createObjectURL(r.data))
 // these return a blob: url
+export const probeAudio = (id) => api.get(`/audio/probes/${id}`, { responseType: 'blob', timeout: 60000 }).then((r) => URL.createObjectURL(r.data))
 export const speakText = (text, rate = 0) => audioBlob('/audio/speak', { text, rate })
 export const simulationAudio = (req) => audioBlob('/audio/simulation', req)
+
+// learn page
+export const getLearn = () => get('/learn')
+export const getRoboticsCases = () => get('/learn/robotics-cases')
 
 // fallback when the backend returns 502: use the browser voice
 export const speakInBrowser = (text) => {

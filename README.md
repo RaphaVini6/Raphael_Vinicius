@@ -73,6 +73,8 @@ Flow: `feature/*` -> `dev` -> `homologa` -> `prod`, and `prod` -> `master`.
 | GET | `/api/probes/{id}/hardware` | real hardware of the probe |
 | GET | `/api/missions` | missions |
 | GET | `/api/missions/environments` | Moon / Mars conditions |
+| GET | `/api/learn` | teaching content (precedents, methodology, robotics) |
+| GET | `/api/learn/robotics-cases` | probes with a classroom robotics application |
 | GET | `/api/hardware`, `/api/hardware/by-category` | game parts |
 | POST | `/api/simulation` | run the game |
 | GET | `/api/simulation/{probeId}/original` | run with the real hardware |
@@ -94,10 +96,14 @@ dust storms, radiation, wear and communication. Values are simplified for teachi
 
 ## Data
 
-- `backend/Data/probes.json` - probes from our research document (sources: NASA / NSSDCA)
+- `backend/Data/probes.moon.json`, `probes.mars.json`, `probes.deep-space.json` - 27 artifacts from our research
+  document (NASA / NSSDCA). Each one links to its NSSDCA catalog entry.
 - `backend/Data/components.json` - parts for the game
+- `backend/Data/learn.json` - teaching content
+- `frontend/public/images/probes/` - images (WebP). 3D renders made by the team; photos from the NASA Image
+  Library (public domain, credited in `imageCredit`).
 
-Still missing: source links, images and image descriptions.
+Only probes with a `scenario` (landers, rovers, the helicopter and the ALSEP stations) appear in the simulator.
 
 ## Accessibility notes
 

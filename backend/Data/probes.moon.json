@@ -1,0 +1,404 @@
+[
+  {
+    "id": "apollo-11-eagle",
+    "name": { "en": "Lunar Module Eagle - Descent Stage", "pt": "Módulo Lunar Eagle - Estágio de Descida", "es": "Módulo Lunar Eagle - Etapa de descenso", "fr": "Module lunaire Eagle - Étage de descente" },
+    "equipment": { "en": "Lunar Module Eagle (LM-5) Descent Stage", "pt": "Estágio de Descida do Módulo Lunar Eagle (LM-5)", "es": "Etapa de descenso del Módulo Lunar Eagle (LM-5)", "fr": "Étage de descente du module lunaire Eagle (LM-5)" },
+    "mission": { "en": "Apollo 11", "es": "Apolo 11" },
+    "destination": "Moon", "type": "Lander",
+    "launch": "1969-07-16", "date": "1969-07-20", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece no solo lunar.", "es": "Permanece en el suelo lunar.", "fr": "Reste sur le sol lunaire." },
+    "location": { "en": "Mare Tranquillitatis (Sea of Tranquility)", "pt": "Mare Tranquillitatis (Mar da Tranquilidade)", "es": "Mare Tranquillitatis (Mar de la Tranquilidad)", "fr": "Mare Tranquillitatis (mer de la Tranquillité)" },
+    "latitude": 0.67416, "longitude": 23.47314,
+    "function": {
+      "en": "Landing of the first crewed mission on the Moon, surface operations platform and launch pad for the ascent stage.",
+      "pt": "Pouso da primeira missão humana na Lua, plataforma de operações na superfície e base de lançamento para o estágio de subida.",
+      "es": "Aterrizaje de la primera misión tripulada en la Luna, plataforma de operaciones en la superficie y base de lanzamiento de la etapa de ascenso.",
+      "fr": "Atterrissage de la première mission habitée sur la Lune, plateforme d'opérations en surface et rampe de lancement de l'étage de remontée."
+    },
+    "mechanicalReuse": {
+      "en": "The 4.2 m wide octagonal aluminum structure and the four landing legs with circular footpads can be deactivated and cut robotically to serve as anchors against moonquakes and support beams for new habitats.",
+      "pt": "A estrutura octogonal de alumínio de 4,2 m de largura e as quatro pernas de pouso com sapatas circulares podem ser desativadas e cortadas roboticamente para servir de ancoragem contra tremores e de vigas de sustentação para novos habitats.",
+      "es": "La estructura octogonal de aluminio de 4,2 m de ancho y las cuatro patas de aterrizaje con zapatas circulares pueden desactivarse y cortarse robóticamente para servir de anclaje contra sismos y de vigas de soporte para nuevos hábitats.",
+      "fr": "La structure octogonale en aluminium de 4,2 m de large et les quatre jambes à patins circulaires peuvent être désactivées et découpées par des robots pour servir d'ancrages antisismiques et de poutres porteuses pour de nouveaux habitats."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-059C" },
+    "reliability": "Confirmed",
+    "reliabilityNote": { "en": "Mapped by the Lunar Reconnaissance Orbiter", "pt": "Mapeado pelo Lunar Reconnaissance Orbiter", "es": "Cartografiado por el Lunar Reconnaissance Orbiter", "fr": "Cartographié par le Lunar Reconnaissance Orbiter" },
+    "imageUrl": "/images/probes/apollo-11-lunar-module.webp",
+    "gallery": ["/images/probes/lm-descent-stage.webp", "/images/probes/diagram-lunar-module.webp"],
+    "realHardware": { "Power": "no-power-source", "Storage": "silver-zinc-primary", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "agc" },
+    "scenario": {
+      "plannedDurationDays": 1, "actualDurationDays": 1, "maxTempC": 60,
+      "summary": { "en": "About 21.5 hours on the surface during the lunar morning.", "pt": "Cerca de 21,5 horas na superfície durante a manhã lunar.", "es": "Unas 21,5 horas en la superficie durante la mañana lunar.", "fr": "Environ 21,5 heures à la surface pendant le matin lunaire." }
+    }
+  },
+  {
+    "id": "apollo-11-eagle-ascent",
+    "name": { "en": "Lunar Module Eagle - Ascent Stage", "pt": "Módulo Lunar Eagle - Estágio de Ascensão", "es": "Módulo Lunar Eagle - Etapa de ascenso", "fr": "Module lunaire Eagle - Étage de remontée" },
+    "equipment": { "en": "Lunar Module Eagle (LM-5) Ascent Stage", "pt": "Estágio de Ascensão do Módulo Lunar Eagle (LM-5)", "es": "Etapa de ascenso del Módulo Lunar Eagle (LM-5)", "fr": "Étage de remontée du module lunaire Eagle (LM-5)" },
+    "mission": { "en": "Apollo 11", "es": "Apolo 11" },
+    "destination": "Moon", "type": "AscentStage",
+    "launch": "1969-07-16", "date": "1969-07-22", "dateKind": "Discarded",
+    "status": "Lost",
+    "statusDetail": { "en": "Impacted the lunar surface 1 to 4 months after being discarded.", "pt": "Impactou a superfície lunar de 1 a 4 meses após o descarte.", "es": "Impactó la superficie lunar entre 1 y 4 meses después de ser descartada.", "fr": "A percuté la surface lunaire 1 à 4 mois après avoir été larguée." },
+    "location": { "en": "Lunar surface (exact coordinates not mapped)", "pt": "Superfície lunar (coordenadas exatas não mapeadas)", "es": "Superficie lunar (coordenadas exactas no cartografiadas)", "fr": "Surface lunaire (coordonnées exactes non cartographiées)" },
+    "function": {
+      "en": "Carry the crew and lift off from the lunar surface to dock with the Command Module.",
+      "pt": "Acolher a tripulação e realizar a decolagem da superfície lunar para acoplamento com o Módulo de Comando.",
+      "es": "Alojar a la tripulación y despegar de la superficie lunar para acoplarse al Módulo de Mando.",
+      "fr": "Accueillir l'équipage et décoller de la surface lunaire pour s'amarrer au module de commande."
+    },
+    "mechanicalReuse": {
+      "en": "If the impact debris is found by robots, the metal alloys of the ascent engine and of the Aerozine 50 fuel tanks can be recycled as raw material for casting.",
+      "pt": "Caso seus destroços de impacto sejam localizados por robôs, as ligas metálicas do motor de ascensão e dos tanques de combustível de aerozine 50 podem ser recicladas como matéria-prima de fundição.",
+      "es": "Si robots localizan sus restos de impacto, las aleaciones del motor de ascenso y de los tanques de combustible de Aerozine 50 pueden reciclarse como materia prima de fundición.",
+      "fr": "Si des robots retrouvent ses débris d'impact, les alliages du moteur de remontée et des réservoirs d'Aérozine 50 peuvent être recyclés comme matière première de fonderie."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-059C" },
+    "reliability": "Estimated",
+    "imageUrl": "/images/probes/lm-ascent-stage.webp"
+  },
+  {
+    "id": "apollo-11-plaque",
+    "name": { "en": "Apollo 11 Ladder Plaque and Memorial Items", "pt": "Placa da Escada e Itens Memoriais da Apollo 11", "es": "Placa de la escalera y objetos conmemorativos del Apolo 11", "fr": "Plaque de l'échelle et objets commémoratifs d'Apollo 11" },
+    "equipment": { "en": "Commemorative Ladder Plaque and Memorial Items Package", "pt": "Placa Comemorativa da Escada e Pacote de Itens Memoriais", "es": "Placa conmemorativa de la escalera y paquete de objetos conmemorativos", "fr": "Plaque commémorative de l'échelle et paquet d'objets commémoratifs" },
+    "mission": { "en": "Apollo 11", "es": "Apolo 11" },
+    "destination": "Moon", "type": "Memorial",
+    "launch": "1969-07-16", "date": "1969-07-20", "dateKind": "Deployment",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece no solo lunar.", "es": "Permanece en el suelo lunar.", "fr": "Reste sur le sol lunaire." },
+    "location": { "en": "Mare Tranquillitatis (fixed on the ladder strut and on the ground)", "pt": "Mare Tranquillitatis (fixada no pilar da escada e no solo)", "es": "Mare Tranquillitatis (fijada en el soporte de la escalera y en el suelo)", "fr": "Mare Tranquillitatis (fixée au montant de l'échelle et au sol)" },
+    "latitude": 0.67416, "longitude": 23.47314,
+    "function": {
+      "en": "Record humanity's historic message of peace and preserve historical memory.",
+      "pt": "Registrar a mensagem histórica de paz da humanidade e preservar a memória histórica.",
+      "es": "Registrar el mensaje histórico de paz de la humanidad y preservar la memoria histórica.",
+      "fr": "Graver le message historique de paix de l'humanité et préserver la mémoire historique."
+    },
+    "mechanicalReuse": {
+      "en": "Preserved as a cultural time capsule and as a passive geodetic marker for optical calibration of new rovers' cameras.",
+      "pt": "Preservação como cápsula do tempo cultural e marco geodésico passivo para calibração óptica de câmeras de novos rovers.",
+      "es": "Preservación como cápsula del tiempo cultural y como marca geodésica pasiva para la calibración óptica de las cámaras de nuevos rovers.",
+      "fr": "Préservation comme capsule temporelle culturelle et repère géodésique passif pour l'étalonnage optique des caméras de nouveaux rovers."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-059C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-11-plaque.webp"
+  },
+  {
+    "id": "apollo-11-easep",
+    "name": { "en": "EASEP and Laser Retroreflector (LRRR)", "pt": "EASEP e Retrorrefletor Laser (LRRR)", "es": "EASEP y retrorreflector láser (LRRR)", "fr": "EASEP et rétroréflecteur laser (LRRR)" },
+    "equipment": { "en": "Early Apollo Scientific Experiment Package (EASEP) and Laser Ranging Retroreflector (LRRR)", "pt": "Early Apollo Scientific Experiment Package (EASEP) e Retrorrefletor Laser (LRRR)" },
+    "mission": { "en": "Apollo 11", "es": "Apolo 11" },
+    "destination": "Moon", "type": "ScientificPackage",
+    "launch": "1969-07-16", "date": "1969-07-21", "dateKind": "Deployment",
+    "status": "Inactive",
+    "statusDetail": { "en": "EASEP shut down on August 27, 1969; the LRRR is still in passive use.", "pt": "EASEP encerrado em 27 de agosto de 1969; o LRRR segue em uso passivo contínuo.", "es": "El EASEP se apagó el 27 de agosto de 1969; el LRRR sigue en uso pasivo.", "fr": "L'EASEP s'est arrêté le 27 août 1969 ; le LRRR reste utilisé de façon passive." },
+    "location": { "en": "17 m from the Lunar Module; LRRR 5 m to the NNW", "pt": "A 17 m do Módulo Lunar; LRRR a 5 m NNW", "es": "A 17 m del Módulo Lunar; LRRR a 5 m al NNO", "fr": "À 17 m du module lunaire ; LRRR à 5 m au NNO" },
+    "latitude": 0.6735, "longitude": 23.473,
+    "function": {
+      "en": "Measure passive seismic activity, dust buildup and the Earth-Moon distance by laser.",
+      "pt": "Medir atividade sísmica passiva, acúmulo de poeira e distância Terra-Lua por laser.",
+      "es": "Medir la actividad sísmica pasiva, la acumulación de polvo y la distancia Tierra-Luna por láser.",
+      "fr": "Mesurer l'activité sismique passive, l'accumulation de poussière et la distance Terre-Lune par laser."
+    },
+    "mechanicalReuse": {
+      "en": "The LRRR is still used, with no power, to measure the lunar orbit; the EASEP solar panels and connectors can be cannibalized as mechanical supports.",
+      "pt": "O LRRR continua sendo utilizado sem consumo de energia para medição da órbita lunar; os painéis solares e conexões do EASEP podem ser canibalizados como suporte mecânico.",
+      "es": "El LRRR se sigue usando, sin consumo de energía, para medir la órbita lunar; los paneles solares y conexiones del EASEP pueden canibalizarse como soporte mecánico.",
+      "fr": "Le LRRR sert toujours, sans consommer d'énergie, à mesurer l'orbite lunaire ; les panneaux solaires et connecteurs de l'EASEP peuvent servir de supports mécaniques."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-059C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-11-easep.webp", "imageCredit": "NASA (AS11-40-5951)"
+  },
+  {
+    "id": "apollo-12-intrepid",
+    "name": { "en": "Lunar Module Intrepid - Descent Stage", "pt": "Módulo Lunar Intrepid - Estágio de Descida", "es": "Módulo Lunar Intrepid - Etapa de descenso", "fr": "Module lunaire Intrepid - Étage de descente" },
+    "equipment": { "en": "Lunar Module Intrepid (LM-6) Descent Stage", "pt": "Estágio de Descida do Módulo Lunar Intrepid (LM-6)", "es": "Etapa de descenso del Módulo Lunar Intrepid (LM-6)", "fr": "Étage de descente du module lunaire Intrepid (LM-6)" },
+    "mission": { "en": "Apollo 12", "es": "Apolo 12" },
+    "destination": "Moon", "type": "Lander",
+    "launch": "1969-11-14", "date": "1969-11-19", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece no solo lunar.", "es": "Permanece en el suelo lunar.", "fr": "Reste sur le sol lunaire." },
+    "location": { "en": "Oceanus Procellarum (Ocean of Storms)", "pt": "Oceanus Procellarum (Oceano das Tempestades)", "es": "Oceanus Procellarum (Océano de las Tormentas)", "fr": "Oceanus Procellarum (océan des Tempêtes)" },
+    "latitude": -3.0128, "longitude": -23.4219,
+    "function": {
+      "en": "Precision crewed landing 180 meters from the Surveyor 3 lander.",
+      "pt": "Pouso tripulado de precisão a 180 metros do pousador Surveyor 3.",
+      "es": "Aterrizaje tripulado de precisión a 180 metros del módulo Surveyor 3.",
+      "fr": "Atterrissage habité de précision à 180 mètres de l'atterrisseur Surveyor 3."
+    },
+    "mechanicalReuse": {
+      "en": "Thermal blanket panels and the light aluminum alloy of the octagonal chassis can be cut and bent robotically to serve as reflectors or mechanical shields.",
+      "pt": "Chapas do revestimento térmico e liga leve de alumínio do chassi octogonal podem ser cortadas e dobradas roboticamente para servirem de refletores ou anteparos mecânicos.",
+      "es": "Las chapas del revestimiento térmico y la aleación ligera de aluminio del chasis octogonal pueden cortarse y doblarse robóticamente para servir de reflectores o escudos mecánicos.",
+      "fr": "Les tôles du revêtement thermique et l'alliage léger d'aluminium du châssis octogonal peuvent être découpés et pliés par des robots pour servir de réflecteurs ou de boucliers mécaniques."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-099C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/lm-descent-stage-intrepid.webp",
+    "gallery": ["/images/probes/diagram-intrepid-lm6.webp"],
+    "realHardware": { "Power": "no-power-source", "Storage": "silver-zinc-primary", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "agc" },
+    "scenario": {
+      "plannedDurationDays": 2, "actualDurationDays": 2, "maxTempC": 60,
+      "summary": { "en": "About 31.5 hours on the surface; precision landing next to Surveyor 3.", "pt": "Cerca de 31,5 horas na superfície; pouso de precisão ao lado da Surveyor 3.", "es": "Unas 31,5 horas en la superficie; aterrizaje de precisión junto a la Surveyor 3.", "fr": "Environ 31,5 heures à la surface ; atterrissage de précision à côté de Surveyor 3." }
+    }
+  },
+  {
+    "id": "apollo-12-intrepid-ascent",
+    "name": { "en": "Lunar Module Intrepid - Ascent Stage", "pt": "Módulo Lunar Intrepid - Estágio de Ascensão", "es": "Módulo Lunar Intrepid - Etapa de ascenso", "fr": "Module lunaire Intrepid - Étage de remontée" },
+    "equipment": { "en": "Lunar Module Intrepid (LM-6) Ascent Stage", "pt": "Estágio de Ascensão do Módulo Lunar Intrepid (LM-6)", "es": "Etapa de ascenso del Módulo Lunar Intrepid (LM-6)", "fr": "Étage de remontée du module lunaire Intrepid (LM-6)" },
+    "mission": { "en": "Apollo 12", "es": "Apolo 12" },
+    "destination": "Moon", "type": "AscentStage",
+    "launch": "1969-11-14", "date": "1969-11-20", "dateKind": "Impact",
+    "status": "Inactive",
+    "statusDetail": { "en": "Intentionally crashed into the lunar surface.", "pt": "Colidiu intencionalmente com a superfície lunar.", "es": "Se estrelló intencionalmente contra la superficie lunar.", "fr": "Écrasé volontairement sur la surface lunaire." },
+    "location": { "en": "About 60 km from the ALSEP", "pt": "A cerca de 60 km do ALSEP", "es": "A unos 60 km del ALSEP", "fr": "À environ 60 km de l'ALSEP" },
+    "latitude": -3.94, "longitude": -21.2,
+    "function": {
+      "en": "Return the crew to the Command Module and make a controlled impact that produced the first recorded artificial moonquake.",
+      "pt": "Retornar a tripulação ao Módulo de Comando e causar um impacto controlado para gerar o primeiro sismo artificial registrado.",
+      "es": "Devolver a la tripulación al Módulo de Mando y provocar un impacto controlado que generó el primer sismo artificial registrado.",
+      "fr": "Ramener l'équipage au module de commande et provoquer un impact contrôlé, à l'origine du premier séisme artificiel enregistré."
+    },
+    "mechanicalReuse": {
+      "en": "Metal fragments from the impact site can be collected by mining rovers and reused in in-situ metallurgy.",
+      "pt": "Fragmentos metálicos do ponto de impacto podem ser coletados por rovers de mineração e reaproveitados em processos de metalurgia in-situ.",
+      "es": "Los fragmentos metálicos del punto de impacto pueden recogerse con rovers mineros y reutilizarse en metalurgia in situ.",
+      "fr": "Les fragments métalliques du point d'impact peuvent être collectés par des rovers miniers et réutilisés en métallurgie in situ."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-099C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/lm-ascent-stage.webp"
+  },
+  {
+    "id": "apollo-12-alsep",
+    "name": { "en": "Apollo 12 ALSEP and SNAP-27 RTG", "pt": "ALSEP e Gerador RTG SNAP-27 da Apollo 12", "es": "ALSEP y generador RTG SNAP-27 del Apolo 12", "fr": "ALSEP et générateur RTG SNAP-27 d'Apollo 12" },
+    "equipment": { "en": "Apollo Lunar Surface Experiments Package (ALSEP) and SNAP-27 RTG", "pt": "Apollo Lunar Surface Experiments Package (ALSEP) e Gerador RTG SNAP-27" },
+    "mission": { "en": "Apollo 12", "es": "Apolo 12" },
+    "destination": "Moon", "type": "ScientificPackage",
+    "launch": "1969-11-14", "date": "1969-11-19", "dateKind": "Deployment",
+    "status": "Inactive",
+    "statusDetail": { "en": "Shut down on September 30, 1977.", "pt": "Desativado em 30 de setembro de 1977.", "es": "Desactivado el 30 de septiembre de 1977.", "fr": "Désactivé le 30 septembre 1977." },
+    "location": { "en": "Oceanus Procellarum" },
+    "latitude": -3.0094, "longitude": -23.4246,
+    "function": {
+      "en": "Geophysical monitoring of moonquakes, ions, dust, magnetic field and solar wind, powered by plutonium-238.",
+      "pt": "Monitoramento geofísico de sismos, íons, poeira, campo magnético e vento solar alimentado por plutônio-238.",
+      "es": "Monitoreo geofísico de sismos, iones, polvo, campo magnético y viento solar, alimentado por plutonio-238.",
+      "fr": "Surveillance géophysique des séismes, des ions, de la poussière, du champ magnétique et du vent solaire, alimentée au plutonium 238."
+    },
+    "mechanicalReuse": {
+      "en": "The SNAP-27 RTG capsule still produces heat through radioactive decay and could be moved by a robot to act as a passive heater, keeping the batteries of new systems warm during the lunar night.",
+      "pt": "A cápsula do RTG SNAP-27 continua gerando calor por decaimento radioativo e pode ser movida por um robô para atuar como fonte de aquecimento passivo para manter baterias de novos sistemas aquecidas durante a noite lunar.",
+      "es": "La cápsula del RTG SNAP-27 sigue generando calor por desintegración radiactiva y podría trasladarse con un robot para actuar como calefactor pasivo y mantener calientes las baterías de nuevos sistemas durante la noche lunar.",
+      "fr": "La capsule du RTG SNAP-27 produit encore de la chaleur par désintégration radioactive et pourrait être déplacée par un robot pour servir de chauffage passif, gardant au chaud les batteries de nouveaux systèmes pendant la nuit lunaire."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1969-099C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-alsep.webp", "imageCredit": "NASA (AS12-47-6919)",
+    "realHardware": { "Power": "rtg-snap27", "Storage": "no-battery", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 365, "actualDurationDays": 2872,
+      "summary": { "en": "A nuclear-powered science station that worked through every lunar night for almost 8 years.", "pt": "Estação científica movida a energia nuclear que funcionou por todas as noites lunares durante quase 8 anos.", "es": "Una estación científica nuclear que funcionó durante todas las noches lunares por casi 8 años.", "fr": "Une station scientifique nucléaire qui a fonctionné pendant toutes les nuits lunaires durant près de 8 ans." }
+    }
+  },
+  {
+    "id": "surveyor-3",
+    "name": { "en": "Surveyor 3 Lander", "pt": "Pousador Surveyor 3", "es": "Módulo Surveyor 3", "fr": "Atterrisseur Surveyor 3" },
+    "equipment": { "en": "Surveyor 3 Lander (Surveyor-C)", "pt": "Lander Surveyor 3 (Surveyor-C)", "es": "Módulo de aterrizaje Surveyor 3 (Surveyor-C)", "fr": "Atterrisseur Surveyor 3 (Surveyor-C)" },
+    "mission": { "en": "Surveyor Program (Surveyor 3)", "pt": "Programa Surveyor (Surveyor 3)", "es": "Programa Surveyor (Surveyor 3)", "fr": "Programme Surveyor (Surveyor 3)" },
+    "destination": "Moon", "type": "Lander",
+    "launch": "1967-04-17", "date": "1967-04-20", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Ended on May 4, 1967; parts recovered by Apollo 12.", "pt": "Encerrado em 4 de maio de 1967; peças resgatadas pela Apollo 12.", "es": "Finalizó el 4 de mayo de 1967; piezas recuperadas por el Apolo 12.", "fr": "Fin le 4 mai 1967 ; pièces récupérées par Apollo 12." },
+    "location": { "en": "Southeastern Oceanus Procellarum", "pt": "Sudeste de Oceanus Procellarum", "es": "Sureste de Oceanus Procellarum", "fr": "Sud-est d'Oceanus Procellarum" },
+    "latitude": -3.0, "longitude": -23.41,
+    "function": {
+      "en": "Soft landing, imaging and digging with a mechanical scoop to test whether the soil could hold the Lunar Module.",
+      "pt": "Pouso suave, imagens e escavação com pá mecânica para testar a resistência do solo para o Módulo Lunar.",
+      "es": "Aterrizaje suave, imágenes y excavación con pala mecánica para comprobar la resistencia del suelo para el Módulo Lunar.",
+      "fr": "Atterrissage en douceur, prises de vue et creusement à la pelle mécanique pour tester la résistance du sol pour le module lunaire."
+    },
+    "mechanicalReuse": {
+      "en": "Historical precedent: astronauts removed the scoop and the camera in 1969. The remaining light-alloy tubular frame can serve as a support truss for antennas.",
+      "pt": "Precedente histórico de reutilização: astronautas removeram a pá e a câmera em 1969. A carcaça tubular de liga leve remanescente serve de treliça de suporte para antenas.",
+      "es": "Precedente histórico: los astronautas retiraron la pala y la cámara en 1969. El armazón tubular restante de aleación ligera puede servir de celosía de soporte para antenas.",
+      "fr": "Précédent historique : les astronautes ont retiré la pelle et la caméra en 1969. Le châssis tubulaire restant en alliage léger peut servir de treillis porteur pour des antennes."
+    },
+    "source": { "name": "NASA Science - Surveyor 3", "nssdcaId": "1967-035A" },
+    "reliability": "Confirmed",
+    "reliabilityNote": { "en": "Visited and inspected on foot by the Apollo 12 crew", "pt": "Visitado e inspecionado a pé pela tripulação da Apollo 12", "es": "Visitado e inspeccionado a pie por la tripulación del Apolo 12", "fr": "Visité et inspecté à pied par l'équipage d'Apollo 12" },
+    "imageUrl": "/images/probes/surveyor-3.webp",
+    "realHardware": { "Power": "solar-panels", "Storage": "silver-zinc-rechargeable", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 14, "actualDurationDays": 14,
+      "summary": { "en": "Operated through one lunar day (about 14 Earth days) and did not survive the lunar night.", "pt": "Operou durante um dia lunar (cerca de 14 dias terrestres) e não sobreviveu à noite lunar.", "es": "Operó durante un día lunar (unos 14 días terrestres) y no sobrevivió a la noche lunar.", "fr": "A fonctionné pendant un jour lunaire (environ 14 jours terrestres) et n'a pas survécu à la nuit lunaire." }
+    }
+  },
+  {
+    "id": "apollo-15-falcon",
+    "name": { "en": "Lunar Module Falcon - Descent Stage", "pt": "Módulo Lunar Falcon - Estágio de Descida", "es": "Módulo Lunar Falcon - Etapa de descenso", "fr": "Module lunaire Falcon - Étage de descente" },
+    "equipment": { "en": "Lunar Module Falcon (LM-10) Descent Stage", "pt": "Estágio de Descida do Módulo Lunar Falcon (LM-10)", "es": "Etapa de descenso del Módulo Lunar Falcon (LM-10)", "fr": "Étage de descente du module lunaire Falcon (LM-10)" },
+    "mission": { "en": "Apollo 15", "es": "Apolo 15" },
+    "destination": "Moon", "type": "Lander",
+    "launch": "1971-07-26", "date": "1971-07-30", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece na superfície lunar.", "es": "Permanece en la superficie lunar.", "fr": "Reste à la surface lunaire." },
+    "location": { "en": "Mare Imbrium / Apennine Mountains", "pt": "Mare Imbrium / Montes Apeninos", "es": "Mare Imbrium / Montes Apeninos", "fr": "Mare Imbrium / monts Apennins" },
+    "latitude": 26.13239, "longitude": 3.6333,
+    "function": {
+      "en": "Extended crewed landing and transport of the LRV and the ALSEP suite.",
+      "pt": "Pouso tripulado estendido e transporte do LRV e da suíte ALSEP.",
+      "es": "Aterrizaje tripulado extendido y transporte del LRV y del conjunto ALSEP.",
+      "fr": "Atterrissage habité prolongé et transport du LRV et de la suite ALSEP."
+    },
+    "mechanicalReuse": {
+      "en": "The emptied titanium-alloy fuel tanks can be disconnected and reshaped into pressurized storage tanks on the ground.",
+      "pt": "Tanques de combustível esvaziados em liga de titânio podem ser desconectados e reformatados como reservatórios de armazenamento pressurizado no solo.",
+      "es": "Los tanques de combustible vacíos de aleación de titanio pueden desconectarse y reconvertirse en depósitos de almacenamiento presurizado en el suelo.",
+      "fr": "Les réservoirs de carburant vides en alliage de titane peuvent être déconnectés et reconvertis en réservoirs de stockage pressurisés au sol."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1971-063C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-15-lunar-module.webp",
+    "gallery": ["/images/probes/lm-descent-stage.webp"],
+    "realHardware": { "Power": "no-power-source", "Storage": "silver-zinc-primary", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "agc" },
+    "scenario": {
+      "plannedDurationDays": 3, "actualDurationDays": 3, "maxTempC": 60,
+      "summary": { "en": "About 67 hours on the surface, the longest stay of the Apollo program so far.", "pt": "Cerca de 67 horas na superfície, a maior estadia do programa Apollo até então.", "es": "Unas 67 horas en la superficie, la estancia más larga del programa Apolo hasta entonces.", "fr": "Environ 67 heures à la surface, le plus long séjour du programme Apollo à l'époque." }
+    }
+  },
+  {
+    "id": "apollo-15-falcon-ascent",
+    "name": { "en": "Lunar Module Falcon - Ascent Stage", "pt": "Módulo Lunar Falcon - Estágio de Ascensão", "es": "Módulo Lunar Falcon - Etapa de ascenso", "fr": "Module lunaire Falcon - Étage de remontée" },
+    "equipment": { "en": "Lunar Module Falcon (LM-10) Ascent Stage", "pt": "Estágio de Ascensão do Módulo Lunar Falcon (LM-10)", "es": "Etapa de ascenso del Módulo Lunar Falcon (LM-10)", "fr": "Étage de remontée du module lunaire Falcon (LM-10)" },
+    "mission": { "en": "Apollo 15", "es": "Apolo 15" },
+    "destination": "Moon", "type": "AscentStage",
+    "launch": "1971-07-26", "date": "1971-08-03", "dateKind": "Impact",
+    "status": "Inactive",
+    "statusDetail": { "en": "Intentionally crashed into the lunar surface.", "pt": "Impactado intencionalmente na superfície lunar.", "es": "Impactado intencionalmente en la superficie lunar.", "fr": "Écrasé volontairement sur la surface lunaire." },
+    "location": { "en": "Lunar surface", "pt": "Superfície lunar", "es": "Superficie lunar", "fr": "Surface lunaire" },
+    "latitude": 26.36, "longitude": 0.25,
+    "function": {
+      "en": "Return the crew to the Command Module and crash into the ground to calibrate the seismic network.",
+      "pt": "Retornar a tripulação ao Módulo de Comando e colidir com o solo para calibração de redes sísmicas.",
+      "es": "Devolver a la tripulación al Módulo de Mando y estrellarse contra el suelo para calibrar la red sísmica.",
+      "fr": "Ramener l'équipage au module de commande et s'écraser au sol pour étalonner le réseau sismique."
+    },
+    "mechanicalReuse": {
+      "en": "Metal alloy debris can be collected by robots and cast into spare parts.",
+      "pt": "Coleta de destroços de liga metálica por robôs para fundição de peças sobressalentes.",
+      "es": "Los restos de aleación metálica pueden recogerse con robots y fundirse para fabricar repuestos.",
+      "fr": "Les débris d'alliage peuvent être collectés par des robots et refondus en pièces de rechange."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1971-063C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/lm-ascent-stage.webp"
+  },
+  {
+    "id": "apollo-15-alsep",
+    "name": { "en": "Apollo 15 ALSEP and SNAP-27 RTG", "pt": "ALSEP e Gerador RTG SNAP-27 da Apollo 15", "es": "ALSEP y generador RTG SNAP-27 del Apolo 15", "fr": "ALSEP et générateur RTG SNAP-27 d'Apollo 15" },
+    "equipment": { "en": "Apollo Lunar Surface Experiments Package (ALSEP) and SNAP-27 RTG", "pt": "Apollo Lunar Surface Experiments Package (ALSEP) e Gerador RTG SNAP-27" },
+    "mission": { "en": "Apollo 15", "es": "Apolo 15" },
+    "destination": "Moon", "type": "ScientificPackage",
+    "launch": "1971-07-26", "date": "1971-07-31", "dateKind": "Deployment",
+    "status": "Inactive",
+    "statusDetail": { "en": "Shut down on September 30, 1977.", "pt": "Desativado em 30 de setembro de 1977.", "es": "Desactivado el 30 de septiembre de 1977.", "fr": "Désactivé le 30 septembre 1977." },
+    "location": { "en": "Mare Imbrium / Apennine Mountains", "pt": "Mare Imbrium / Montes Apeninos", "es": "Mare Imbrium / Montes Apeninos", "fr": "Mare Imbrium / monts Apennins" },
+    "latitude": 26.1341, "longitude": 3.6298,
+    "function": {
+      "en": "Continuous measurement of internal heat flow, seismology and solar wind, powered by an RTG.",
+      "pt": "Medição contínua do fluxo de calor interno, sismologia e vento solar, alimentada por RTG.",
+      "es": "Medición continua del flujo de calor interno, sismología y viento solar, alimentada por un RTG.",
+      "fr": "Mesure continue du flux de chaleur interne, de la sismologie et du vent solaire, alimentée par un RTG."
+    },
+    "mechanicalReuse": {
+      "en": "The continuous waste heat of the SNAP-27 radioisotope source can be used as a passive heater for equipment during lunar nights.",
+      "pt": "Aproveitamento do calor residual contínuo da fonte de radioisótopos do SNAP-27 como aquecedor passivo de equipamentos durante noites lunares.",
+      "es": "El calor residual continuo de la fuente de radioisótopos del SNAP-27 puede usarse como calefactor pasivo de equipos durante las noches lunares.",
+      "fr": "La chaleur résiduelle continue de la source radio-isotopique du SNAP-27 peut servir de chauffage passif pour les équipements pendant les nuits lunaires."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1971-063C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-alsep.webp", "imageCredit": "NASA (AS12-47-6919)",
+    "realHardware": { "Power": "rtg-snap27", "Storage": "no-battery", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 365, "actualDurationDays": 2253,
+      "summary": { "en": "Measured the Moon's internal heat for more than 6 years on nuclear power.", "pt": "Mediu o calor interno da Lua por mais de 6 anos com energia nuclear.", "es": "Midió el calor interno de la Luna durante más de 6 años con energía nuclear.", "fr": "A mesuré la chaleur interne de la Lune pendant plus de 6 ans grâce à l'énergie nucléaire." }
+    }
+  },
+  {
+    "id": "apollo-15-lrv",
+    "name": { "en": "Lunar Roving Vehicle (Rover 15)", "pt": "Veículo Rover Lunar LRV (Rover 15)", "es": "Vehículo Rover Lunar LRV (Rover 15)", "fr": "Véhicule lunaire LRV (Rover 15)" },
+    "equipment": { "en": "Lunar Roving Vehicle (LRV / Rover 15)" },
+    "mission": { "en": "Apollo 15", "es": "Apolo 15" },
+    "destination": "Moon", "type": "Rover",
+    "launch": "1971-07-26", "date": "1971-07-30", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece na superfície lunar.", "es": "Permanece en la superficie lunar.", "fr": "Reste à la surface lunaire." },
+    "location": { "en": "Mare Imbrium (foot of the Apennine Mountains)", "pt": "Mare Imbrium (base dos Montes Apeninos)", "es": "Mare Imbrium (base de los Montes Apeninos)", "fr": "Mare Imbrium (pied des monts Apennins)" },
+    "latitude": 26.13239, "longitude": 3.6333,
+    "function": {
+      "en": "First powered vehicle on the Moon, covering 27.9 km.",
+      "pt": "Primeiro veículo de transporte automotivo lunar, cobrindo 27,9 km.",
+      "es": "Primer vehículo motorizado en la Luna, que recorrió 27,9 km.",
+      "fr": "Premier véhicule motorisé sur la Lune, ayant parcouru 27,9 km."
+    },
+    "mechanicalReuse": {
+      "en": "The steel/titanium mesh wheels, the folding aluminum chassis and the four electric wheel motors can be taken apart by robots to build an autonomous cargo trailer.",
+      "pt": "As rodas de malha de aço/titânio, o chassi dobrável de alumínio e os quatro motores elétricos das rodas podem ser desmontados roboticamente para construir um reboque de carga autônomo.",
+      "es": "Las ruedas de malla de acero/titanio, el chasis plegable de aluminio y los cuatro motores eléctricos de las ruedas pueden desmontarse con robots para construir un remolque de carga autónomo.",
+      "fr": "Les roues à maillage acier/titane, le châssis pliant en aluminium et les quatre moteurs électriques des roues peuvent être démontés par des robots pour construire une remorque de charge autonome."
+    },
+    "keyComponents": {
+      "en": "Folding aluminum chassis, steel/titanium mesh wheels and an individual electric motor in each wheel.",
+      "pt": "Chassi dobrável de alumínio, rodas de malha de aço/titânio e motores elétricos individuais em cada roda.",
+      "es": "Chasis plegable de aluminio, ruedas de malla de acero/titanio y un motor eléctrico individual en cada rueda.",
+      "fr": "Châssis pliant en aluminium, roues à maillage acier/titane et un moteur électrique individuel dans chaque roue."
+    },
+    "roboticsApplication": {
+      "en": "Students design maintenance robots that extract the LRV's electric motors and metal wheels. With them, they build an autonomous robotic trailer to carry cargo and lunar regolith, without sending new vehicles from Earth.",
+      "pt": "Alunos projetam robôs de manutenção para extrair os motores elétricos e as rodas metálicas do LRV. Com esses componentes, constrói-se um reboque robótico autônomo para transporte de carga e regolito lunar sem a necessidade de enviar novos veículos da Terra.",
+      "es": "Los alumnos diseñan robots de mantenimiento que extraen los motores eléctricos y las ruedas metálicas del LRV. Con ellos se construye un remolque robótico autónomo para transportar carga y regolito lunar sin enviar nuevos vehículos desde la Tierra.",
+      "fr": "Les élèves conçoivent des robots de maintenance qui extraient les moteurs électriques et les roues métalliques du LRV. Avec ces pièces, on construit une remorque robotique autonome pour transporter du matériel et du régolithe lunaire, sans envoyer de nouveaux véhicules depuis la Terre."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1971-063C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-15-lrv.webp",
+    "realHardware": { "Power": "no-power-source", "Storage": "silver-zinc-primary", "Thermal": "mli", "Mobility": "steel-mesh-wheels", "Communication": "s-band", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 3, "actualDurationDays": 3, "maxTempC": 60,
+      "summary": { "en": "Three days of crewed drives across the Hadley-Apennine region.", "pt": "Três dias de passeios tripulados pela região de Hadley-Apeninos.", "es": "Tres días de recorridos tripulados por la región de Hadley-Apeninos.", "fr": "Trois jours de trajets habités dans la région de Hadley-Apennins." }
+    }
+  },
+  {
+    "id": "apollo-15-fallen-astronaut",
+    "name": { "en": "Fallen Astronaut Memorial", "pt": "Placa Memorial e Estatueta Fallen Astronaut", "es": "Memorial Fallen Astronaut", "fr": "Mémorial Fallen Astronaut" },
+    "equipment": { "en": "Memorial Plaque and Fallen Astronaut Figurine", "pt": "Placa Memorial e Estatueta Fallen Astronaut", "es": "Placa conmemorativa y estatuilla Fallen Astronaut", "fr": "Plaque commémorative et statuette Fallen Astronaut" },
+    "mission": { "en": "Apollo 15", "es": "Apolo 15" },
+    "destination": "Moon", "type": "Memorial",
+    "launch": "1971-07-26", "date": "1971-08-02", "dateKind": "Deployment",
+    "status": "Inactive",
+    "statusDetail": { "en": "Remains on the lunar surface.", "pt": "Permanece na superfície lunar.", "es": "Permanece en la superficie lunar.", "fr": "Reste à la surface lunaire." },
+    "location": { "en": "Mare Imbrium" },
+    "latitude": 26.13239, "longitude": 3.6333,
+    "function": {
+      "en": "Tribute to the 14 astronauts and cosmonauts who had died.",
+      "pt": "Homenagem aos 14 astronautas e cosmonautas falecidos.",
+      "es": "Homenaje a los 14 astronautas y cosmonautas fallecidos.",
+      "fr": "Hommage aux 14 astronautes et cosmonautes disparus."
+    },
+    "mechanicalReuse": {
+      "en": "Preserved as historical heritage on the ground and as a passive target for orbital image contrast tests.",
+      "pt": "Preservação cultural histórica no solo e alvo passivo para testes de contraste de imagem orbital.",
+      "es": "Preservación como patrimonio histórico en el suelo y blanco pasivo para pruebas de contraste de imagen orbital.",
+      "fr": "Préservation comme patrimoine historique au sol et cible passive pour les tests de contraste d'imagerie orbitale."
+    },
+    "source": { "name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "nssdcaId": "1971-063C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/apollo-15-fallen-astronaut.webp"
+  }
+]

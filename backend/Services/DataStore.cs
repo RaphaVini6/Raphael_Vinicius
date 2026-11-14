@@ -15,12 +15,18 @@ public class DataStore
 
     public IReadOnlyList<ProbeData> Probes { get; }
     public IReadOnlyList<ComponentData> Components { get; }
+    public LearnData Learn { get; }
 
     public DataStore(IWebHostEnvironment env)
     {
         var dir = Path.Combine(env.ContentRootPath, "Data");
-        Probes = Read<List<ProbeData>>(Path.Combine(dir, "probes.json"));
+        // probes are split by destination: probes.moon.json, probes.mars.json, ...
+        Probes = Directory.GetFiles(dir, "probes.*.json").Order()
+            .SelectMany(f => Read<List<ProbeData>>(f))
+            .OrderBy(p => p.Destination).ThenBy(p => p.Date)
+            .ToList();
         Components = Read<List<ComponentData>>(Path.Combine(dir, "components.json"));
+        Learn = Read<LearnData>(Path.Combine(dir, "learn.json"));
     }
 
     public ProbeData? Probe(string id) => Probes.FirstOrDefault(p => p.Id.Equals(id, StringComparison.OrdinalIgnoreCase));

@@ -1,0 +1,369 @@
+[
+  {
+    "id": "viking-lander-1",
+    "name": { "en": "Viking Lander 1" },
+    "equipment": { "en": "Viking Lander 1 (Thomas Mutch Memorial Station)", "pt": "Viking Lander 1 (Estação Memorial Thomas Mutch)", "es": "Viking Lander 1 (Estación Memorial Thomas Mutch)", "fr": "Viking Lander 1 (station commémorative Thomas Mutch)" },
+    "mission": { "en": "Viking 1" },
+    "destination": "Mars", "type": "Lander",
+    "launch": "1975-08-20", "date": "1976-07-20", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Communication ended on November 11, 1982.", "pt": "Comunicação encerrada em 11 de novembro de 1982.", "es": "La comunicación terminó el 11 de noviembre de 1982.", "fr": "Communication interrompue le 11 novembre 1982." },
+    "location": { "en": "Western slopes of Chryse Planitia", "pt": "Encostas ocidentais de Chryse Planitia", "es": "Laderas occidentales de Chryse Planitia", "fr": "Versants ouest de Chryse Planitia" },
+    "latitude": 22.483, "longitude": -47.94,
+    "function": {
+      "en": "Soil analysis with GCMS and XRF, color photographs and daily weather.",
+      "pt": "Análise de solo via GCMS e XRF, fotos coloridas e meteorologia diária.",
+      "es": "Análisis del suelo con GCMS y XRF, fotografías en color y meteorología diaria.",
+      "fr": "Analyse du sol par GCMS et XRF, photos en couleur et météorologie quotidienne."
+    },
+    "mechanicalReuse": {
+      "en": "The robotic remote sampler arm can be removed and used as a mechanical gripper or crane on a new rover; the aluminum/titanium chassis can be cut to reinforce habitats.",
+      "pt": "O braço robótico amostrador (remote sampler arm) pode ser desmontado para uso como garra mecânica ou guindaste em um novo rover; o chassi de alumínio/titânio pode ser recortado para reforço de habitats.",
+      "es": "El brazo robótico de muestreo (remote sampler arm) puede desmontarse y usarse como garra mecánica o grúa en un nuevo rover; el chasis de aluminio/titanio puede recortarse para reforzar hábitats.",
+      "fr": "Le bras robotique d'échantillonnage (remote sampler arm) peut être démonté et servir de pince mécanique ou de grue sur un nouveau rover ; le châssis aluminium/titane peut être découpé pour renforcer des habitats."
+    },
+    "keyComponents": {
+      "en": "Robotic remote sampler arm driven by stepper motors and joints, plus an aluminum and titanium chassis.",
+      "pt": "Braço amostrador robótico (remote sampler arm) acionado por motores de passo e articulações, além de um chassi de alumínio e titânio.",
+      "es": "Brazo robótico de muestreo accionado por motores paso a paso y articulaciones, además de un chasis de aluminio y titanio.",
+      "fr": "Bras robotique d'échantillonnage actionné par des moteurs pas à pas et des articulations, et châssis en aluminium et titane."
+    },
+    "roboticsApplication": {
+      "en": "Students learn to program a Service Rover that detaches the Viking 1 sampler arm and reinstalls it as a manipulator or drilling lever on a new vehicle. The light-alloy chassis panels can be cut robotically into thermal shielding for new systems.",
+      "pt": "Ensina-se a programar um Rover Recuperador (Service Rover) para desacoplar o braço amostrador do Viking 1 e reinstalá-lo como manipulador mecânico ou alavanca de perfuração em um novo veículo. As chapas de liga leve do chassi podem ser recortadas roboticamente para servir de blindagem térmica para novos sistemas.",
+      "es": "Se enseña a programar un rover recuperador (Service Rover) que desacopla el brazo de muestreo del Viking 1 y lo reinstala como manipulador o palanca de perforación en un nuevo vehículo. Las chapas de aleación ligera del chasis pueden recortarse robóticamente como blindaje térmico para nuevos sistemas.",
+      "fr": "On apprend à programmer un rover de service qui détache le bras d'échantillonnage de Viking 1 et le réinstalle comme manipulateur ou levier de forage sur un nouveau véhicule. Les tôles en alliage léger du châssis peuvent être découpées par robot pour servir de blindage thermique à de nouveaux systèmes."
+    },
+    "source": { "name": "NASA Science - Viking 1", "nssdcaId": "1975-075C" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/viking-lander-1.webp", "imageCredit": "NASA/JPL (PIA09703)",
+    "realHardware": { "Power": "rtg-snap19", "Storage": "nickel-cadmium", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "s-band", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 90, "actualDurationDays": 2305, "minTempC": -100,
+      "summary": { "en": "Planned for 90 days, it operated for more than 6 years thanks to nuclear power (RTG).", "pt": "Planejada para 90 dias, operou por mais de 6 anos graças à energia nuclear (RTG).", "es": "Planificada para 90 días, operó durante más de 6 años gracias a la energía nuclear (RTG).", "fr": "Prévue pour 90 jours, elle a fonctionné plus de 6 ans grâce à l'énergie nucléaire (RTG)." }
+    }
+  },
+  {
+    "id": "viking-1-orbiter",
+    "name": { "en": "Viking 1 Orbiter" },
+    "equipment": { "en": "Viking 1 Orbiter" },
+    "mission": { "en": "Viking 1" },
+    "destination": "Mars", "type": "Orbiter",
+    "launch": "1975-08-20", "date": "1976-06-19", "dateKind": "OrbitInsertion",
+    "status": "Inactive",
+    "statusDetail": { "en": "Switched off on August 7, 1980, after running out of propellant.", "pt": "Desligado em 7 de agosto de 1980 por término de propelente.", "es": "Apagado el 7 de agosto de 1980 al agotarse el propelente.", "fr": "Éteint le 7 août 1980, faute de propergol." },
+    "location": { "en": "Mars orbit", "pt": "Órbita marciana", "es": "Órbita marciana", "fr": "Orbite martienne" },
+    "function": {
+      "en": "Photographic mapping of 97% of the Martian surface, plus thermal and water vapor mapping.",
+      "pt": "Mapeamento fotográfico orbital de 97% da superfície marciana, mapeamento térmico e de vapor de água.",
+      "es": "Cartografía fotográfica orbital del 97% de la superficie marciana, además de mapas térmicos y de vapor de agua.",
+      "fr": "Cartographie photographique orbitale de 97 % de la surface martienne, cartographie thermique et de la vapeur d'eau."
+    },
+    "mechanicalReuse": {
+      "en": "Serves as a permanent inert satellite for calibrating orbital models and tracking gravitational perturbations.",
+      "pt": "Serve como satélite inerte permanente para calibração de modelos orbitais e rastreamento de perturbações gravitacionais.",
+      "es": "Sirve como satélite inerte permanente para calibrar modelos orbitales y seguir perturbaciones gravitacionales.",
+      "fr": "Sert de satellite inerte permanent pour étalonner les modèles orbitaux et suivre les perturbations gravitationnelles."
+    },
+    "source": { "name": "NASA Science - Viking 1", "nssdcaId": "1975-075A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/viking-1-orbiter.webp",
+    "gallery": ["/images/probes/diagram-viking-orbiter.webp"]
+  },
+  {
+    "id": "mars-pathfinder",
+    "name": { "en": "Mars Pathfinder Lander", "pt": "Lander Mars Pathfinder", "es": "Módulo Mars Pathfinder", "fr": "Atterrisseur Mars Pathfinder" },
+    "equipment": { "en": "Mars Pathfinder Lander (Carl Sagan Memorial Station)", "pt": "Lander Mars Pathfinder (Estação Memorial Carl Sagan)", "es": "Módulo Mars Pathfinder (Estación Memorial Carl Sagan)", "fr": "Atterrisseur Mars Pathfinder (station commémorative Carl Sagan)" },
+    "mission": { "en": "Mars Pathfinder" },
+    "destination": "Mars", "type": "Lander",
+    "launch": "1996-12-04", "date": "1997-07-04", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Transmissions ended on September 27, 1997.", "pt": "Transmissões encerradas em 27 de setembro de 1997.", "es": "Las transmisiones terminaron el 27 de septiembre de 1997.", "fr": "Transmissions interrompues le 27 septembre 1997." },
+    "location": { "en": "Ares Vallis" },
+    "function": {
+      "en": "Airbag landing, support station for Sojourner and atmospheric/weather monitoring.",
+      "pt": "Pouso com airbags, estação de suporte para o Sojourner e monitoramento atmosférico/meteorológico.",
+      "es": "Aterrizaje con airbags, estación de apoyo para el Sojourner y monitoreo atmosférico/meteorológico.",
+      "fr": "Atterrissage par airbags, station de soutien pour Sojourner et surveillance atmosphérique/météorologique."
+    },
+    "mechanicalReuse": {
+      "en": "The folding metal exit ramps can be reused by new rovers as bridges over rocky cracks.",
+      "pt": "As rampas metálicas dobráveis de desembarque podem ser reutilizadas como pontes de transposição de fendas rochosas por novos rovers.",
+      "es": "Las rampas metálicas plegables de descenso pueden reutilizarse por nuevos rovers como puentes para cruzar grietas rocosas.",
+      "fr": "Les rampes métalliques pliantes de débarquement peuvent servir de passerelles aux nouveaux rovers pour franchir des fissures rocheuses."
+    },
+    "source": { "name": "NASA Science - Mars Pathfinder", "nssdcaId": "1996-068A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/mars-pathfinder.webp", "imageCredit": "NASA/JPL (PIA01550)",
+    "realHardware": { "Power": "solar-panels", "Storage": "silver-zinc-rechargeable", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "x-band", "Computer": "rad6000" },
+    "scenario": {
+      "plannedDurationDays": 30, "actualDurationDays": 85,
+      "summary": { "en": "Planned for 30 days, it lasted 85; the battery degraded and the night cold ended the mission.", "pt": "Planejada para 30 dias, durou 85; a bateria se degradou e o frio noturno encerrou a missão.", "es": "Planificada para 30 días, duró 85; la batería se degradó y el frío nocturno terminó la misión.", "fr": "Prévue pour 30 jours, elle en a duré 85 ; la batterie s'est dégradée et le froid nocturne a mis fin à la mission." }
+    }
+  },
+  {
+    "id": "sojourner",
+    "name": { "en": "Sojourner Rover", "pt": "Rover Sojourner", "es": "Rover Sojourner", "fr": "Rover Sojourner" },
+    "equipment": { "en": "Sojourner Rover", "pt": "Rover Sojourner", "es": "Rover Sojourner", "fr": "Rover Sojourner" },
+    "mission": { "en": "Mars Pathfinder" },
+    "destination": "Mars", "type": "Rover",
+    "launch": "1996-12-04", "date": "1997-07-04", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Ended on September 27, 1997.", "pt": "Encerrado em 27 de setembro de 1997.", "es": "Finalizó el 27 de septiembre de 1997.", "fr": "Fin le 27 septembre 1997." },
+    "location": { "en": "Ares Vallis" },
+    "function": {
+      "en": "Elemental analysis of rocks with the APXS and demonstration of robotic mobility.",
+      "pt": "Análise da composição elementar de rochas com APXS e demonstração de mobilidade robótica.",
+      "es": "Análisis de la composición elemental de las rocas con el APXS y demostración de movilidad robótica.",
+      "fr": "Analyse de la composition élémentaire des roches avec l'APXS et démonstration de mobilité robotique."
+    },
+    "mechanicalReuse": {
+      "en": "The ultralight rover frame (10.6 kg) can be towed and reshaped into an auxiliary cargo cart attached to bigger robots.",
+      "pt": "A estrutura ultraleve do rover (10,6 kg) pode ser rebocada e reformatada como um carrinho de carga auxiliar acoplado a robôs maiores.",
+      "es": "La estructura ultraligera del rover (10,6 kg) puede remolcarse y convertirse en un carrito de carga auxiliar acoplado a robots más grandes.",
+      "fr": "La structure ultralégère du rover (10,6 kg) peut être remorquée et transformée en chariot de charge auxiliaire attelé à des robots plus grands."
+    },
+    "source": { "name": "NASA Science - Mars Pathfinder", "nssdcaId": "1996-068A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/sojourner.webp", "imageCredit": "NASA/JPL (PIA01551)",
+    "realHardware": { "Power": "solar-panels", "Storage": "silver-zinc-rechargeable", "Thermal": "rhu", "Mobility": "aluminum-wheels", "Communication": "uhf-relay", "Computer": "command-sequencer" },
+    "scenario": {
+      "plannedDurationDays": 7, "actualDurationDays": 83,
+      "summary": { "en": "Built for a 7-sol demonstration, the first Mars rover worked for almost 3 months.", "pt": "Feito para uma demonstração de 7 sóis, o primeiro rover de Marte funcionou por quase 3 meses.", "es": "Construido para una demostración de 7 soles, el primer rover de Marte funcionó casi 3 meses.", "fr": "Conçu pour une démonstration de 7 sols, le premier rover martien a fonctionné près de 3 mois." }
+    }
+  },
+  {
+    "id": "pathfinder-airbags",
+    "name": { "en": "Pathfinder Airbags and Parachute", "pt": "Airbags e Paraquedas da Pathfinder", "es": "Airbags y paracaídas de la Pathfinder", "fr": "Airbags et parachute de Pathfinder" },
+    "equipment": { "en": "Pathfinder Deceleration Airbags and Parachute", "pt": "Airbags e Paraquedas de Desaceleração da Pathfinder", "es": "Airbags y paracaídas de desaceleración de la Pathfinder", "fr": "Airbags et parachute de décélération de Pathfinder" },
+    "mission": { "en": "Mars Pathfinder" },
+    "destination": "Mars", "type": "Debris",
+    "launch": "1996-12-04", "date": "1997-07-04", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Discarded on the surface.", "pt": "Descartado na superfície.", "es": "Descartados en la superficie.", "fr": "Abandonnés à la surface." },
+    "location": { "en": "Ares Vallis (bounce path about 1 km from the landing site)", "pt": "Ares Vallis (trajetória de quique a ~1 km do pouso)", "es": "Ares Vallis (trayectoria de rebote a ~1 km del aterrizaje)", "fr": "Ares Vallis (trajectoire de rebonds à ~1 km du site d'atterrissage)" },
+    "function": {
+      "en": "Cushion the atmospheric entry impact over 15 successive bounces.",
+      "pt": "Amortecer o impacto de entrada atmosférica em 15 quiques sucessivos.",
+      "es": "Amortiguar el impacto de la entrada atmosférica en 15 rebotes sucesivos.",
+      "fr": "Amortir l'impact de l'entrée atmosphérique en 15 rebonds successifs."
+    },
+    "mechanicalReuse": {
+      "en": "The high-strength woven synthetic fabric of the airbags can be cut into sealing blankets or dust barriers.",
+      "pt": "Os tecidos sintéticos trançados de alta resistência dos airbags podem ser cortados para servir de mantas de vedação ou contenção de poeira.",
+      "es": "Los tejidos sintéticos trenzados de alta resistencia de los airbags pueden cortarse como mantas de sellado o barreras contra el polvo.",
+      "fr": "Les tissus synthétiques tressés à haute résistance des airbags peuvent être découpés en couvertures d'étanchéité ou en barrières anti-poussière."
+    },
+    "source": { "name": "NASA Science - Mars Pathfinder", "nssdcaId": "1996-068A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/pathfinder-airbags.webp", "imageCredit": "NASA/JPL (PIA00612)"
+  },
+  {
+    "id": "spirit",
+    "name": { "en": "Spirit Rover", "pt": "Rover Spirit", "es": "Rover Spirit", "fr": "Rover Spirit" },
+    "equipment": { "en": "Spirit Rover (MER-A, Columbia Memorial Station)", "pt": "Rover Spirit (MER-A, Estação Memorial Columbia)", "es": "Rover Spirit (MER-A, Estación Memorial Columbia)", "fr": "Rover Spirit (MER-A, station commémorative Columbia)" },
+    "mission": { "en": "Mars Exploration Rovers (MER)" },
+    "destination": "Mars", "type": "Rover",
+    "launch": "2003", "date": "2004-01-03", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Ended in 2010 after driving 7.7 km.", "pt": "Encerrado em 2010 após percorrer 7,7 km.", "es": "Finalizó en 2010 tras recorrer 7,7 km.", "fr": "Fin en 2010 après avoir parcouru 7,7 km." },
+    "location": { "en": "Gusev Crater", "pt": "Cratera Gusev", "es": "Cráter Gusev", "fr": "Cratère Gusev" },
+    "function": {
+      "en": "Confirm the presence of ancient water in the rock record of Gusev Crater.",
+      "pt": "Confirmar a presença de água antiga no registro rochoso da Cratera Gusev.",
+      "es": "Confirmar la presencia de agua antigua en el registro rocoso del cráter Gusev.",
+      "fr": "Confirmer la présence d'eau ancienne dans les roches du cratère Gusev."
+    },
+    "mechanicalReuse": {
+      "en": "The stepper motors of the independent wheels and the titanium joints of the arm can be cannibalized into small repair cranes.",
+      "pt": "Motores de passo das rodas independentes e juntas de titânio do braço podem ser canibalizados para formar guindastes de pequenos reparos.",
+      "es": "Los motores paso a paso de las ruedas independientes y las articulaciones de titanio del brazo pueden canibalizarse para formar pequeñas grúas de reparación.",
+      "fr": "Les moteurs pas à pas des roues indépendantes et les articulations en titane du bras peuvent être récupérés pour former de petites grues de réparation."
+    },
+    "source": { "name": "NASA Science - Mars Exploration Rovers", "nssdcaId": "2003-027A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/spirit.webp", "imageCredit": "NASA/JPL (PIA04239)",
+    "realHardware": { "Power": "solar-panels", "Storage": "lithium-ion", "Thermal": "rhu", "Mobility": "rocker-bogie-aluminum", "Communication": "uhf-relay", "Computer": "rad6000" },
+    "scenario": {
+      "plannedDurationDays": 92, "actualDurationDays": 2270, "windCleansPanels": true,
+      "dustStorms": [ { "startDay": 1275, "durationDays": 40, "lightFactor": 0.25, "description": { "en": "2007 global dust storm", "pt": "Tempestade de poeira global de 2007", "es": "Tormenta de polvo global de 2007", "fr": "Tempête de poussière globale de 2007" } } ],
+      "summary": { "en": "Planned for 90 sols, it operated for about 6 years; wind gusts cleaned the dust off its panels.", "pt": "Planejado para 90 sóis, operou cerca de 6 anos; o vento limpava a poeira dos painéis.", "es": "Planificado para 90 soles, operó unos 6 años; el viento limpiaba el polvo de sus paneles.", "fr": "Prévu pour 90 sols, il a fonctionné environ 6 ans ; le vent nettoyait la poussière de ses panneaux." }
+    }
+  },
+  {
+    "id": "opportunity",
+    "name": { "en": "Opportunity Rover", "pt": "Rover Opportunity", "es": "Rover Opportunity", "fr": "Rover Opportunity" },
+    "equipment": { "en": "Opportunity Rover (MER-B)", "pt": "Rover Opportunity (MER-B)", "es": "Rover Opportunity (MER-B)", "fr": "Rover Opportunity (MER-B)" },
+    "mission": { "en": "Mars Exploration Rovers (MER)" },
+    "destination": "Mars", "type": "Rover",
+    "launch": "2003", "date": "2004-01-24", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Ended on June 10, 2018, after a dust storm; it drove 45.16 km.", "pt": "Encerrado em 10 de junho de 2018 após tempestade de poeira; percorreu 45,16 km.", "es": "Finalizó el 10 de junio de 2018 tras una tormenta de polvo; recorrió 45,16 km.", "fr": "Fin le 10 juin 2018 après une tempête de poussière ; il a parcouru 45,16 km." },
+    "location": { "en": "Meridiani Planum (Eagle and Endurance craters)", "pt": "Meridiani Planum (crateras Eagle e Endurance)", "es": "Meridiani Planum (cráteres Eagle y Endurance)", "fr": "Meridiani Planum (cratères Eagle et Endurance)" },
+    "function": {
+      "en": "Study the history of water and hydrated mineral deposits in Meridiani Planum.",
+      "pt": "Estudar o histórico de água e depósitos minerais hidratados em Meridiani Planum.",
+      "es": "Estudiar la historia del agua y los depósitos minerales hidratados en Meridiani Planum.",
+      "fr": "Étudier l'histoire de l'eau et les dépôts de minéraux hydratés à Meridiani Planum."
+    },
+    "mechanicalReuse": {
+      "en": "The reinforced gears of the rocker-bogie suspension and the panoramic camera joints can be refurbished into small automated mechanisms.",
+      "pt": "As engrenagens reforçadas do sistema de suspensão rocker-bogie e articulações da câmera panorâmica podem ser recondicionadas para montagem de pequenos mecanismos automatizados.",
+      "es": "Los engranajes reforzados de la suspensión rocker-bogie y las articulaciones de la cámara panorámica pueden reacondicionarse para montar pequeños mecanismos automatizados.",
+      "fr": "Les engrenages renforcés de la suspension rocker-bogie et les articulations de la caméra panoramique peuvent être remis en état pour construire de petits mécanismes automatisés."
+    },
+    "source": { "name": "NASA Science - Mars Exploration Rovers", "nssdcaId": "2003-032A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/opportunity.webp", "imageCredit": "NASA/JPL (PIA04240)",
+    "realHardware": { "Power": "solar-panels", "Storage": "lithium-ion", "Thermal": "rhu", "Mobility": "rocker-bogie-aluminum", "Communication": "uhf-relay", "Computer": "rad6000" },
+    "scenario": {
+      "plannedDurationDays": 92, "actualDurationDays": 5251, "windCleansPanels": true,
+      "dustStorms": [ { "startDay": 5235, "durationDays": 120, "lightFactor": 0.02, "description": { "en": "2018 global dust storm", "pt": "Tempestade de poeira global de 2018", "es": "Tormenta de polvo global de 2018", "fr": "Tempête de poussière globale de 2018" } } ],
+      "summary": { "en": "Planned for 90 sols, it operated for more than 14 years until a global storm blocked out the Sun.", "pt": "Planejado para 90 sóis, operou mais de 14 anos até uma tempestade global bloquear o Sol.", "es": "Planificado para 90 soles, operó más de 14 años hasta que una tormenta global tapó el Sol.", "fr": "Prévu pour 90 sols, il a fonctionné plus de 14 ans, jusqu'à ce qu'une tempête globale masque le Soleil." }
+    }
+  },
+  {
+    "id": "insight",
+    "name": { "en": "InSight Lander", "pt": "Lander InSight", "es": "Módulo InSight", "fr": "Atterrisseur InSight" },
+    "equipment": { "en": "InSight Lander (Interior Exploration using Seismic Investigations, Geodesy and Heat Transport)" },
+    "mission": { "en": "Mars InSight Lander" },
+    "destination": "Mars", "type": "Lander",
+    "launch": "2018-05-05", "date": "2018-11-26", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Ended on December 15, 2022.", "pt": "Encerrado em 15 de dezembro de 2022.", "es": "Finalizó el 15 de diciembre de 2022.", "fr": "Fin le 15 décembre 2022." },
+    "location": { "en": "Elysium Planitia" },
+    "latitude": 4.5, "longitude": 135.9,
+    "function": {
+      "en": "Map the internal structure of the heterogeneous Martian mantle through seismology and measure wind and pressure.",
+      "pt": "Mapear a estrutura interna do manto heterogêneo marciano via sismologia e medir vento/pressão.",
+      "es": "Cartografiar la estructura interna del manto marciano heterogéneo mediante sismología y medir viento y presión.",
+      "fr": "Cartographier la structure interne du manteau martien hétérogène par la sismologie et mesurer le vent et la pression."
+    },
+    "mechanicalReuse": {
+      "en": "Engineering reuse: it was built on the Mars Phoenix platform. On the ground, its 1.8-meter robotic arm can be detached and adapted as an actuator in fixed stations.",
+      "pt": "Reutilização de engenharia: foi construído com base na plataforma da Mars Phoenix. No solo, seu braço robótico de 1,8 metro pode ser desconectado e adaptado como atuador em estações fixas.",
+      "es": "Reutilización de ingeniería: se construyó sobre la plataforma de la Mars Phoenix. En el suelo, su brazo robótico de 1,8 metros puede desconectarse y adaptarse como actuador en estaciones fijas.",
+      "fr": "Réutilisation d'ingénierie : il a été construit sur la plateforme de Mars Phoenix. Au sol, son bras robotique de 1,8 mètre peut être détaché et adapté comme actionneur dans des stations fixes."
+    },
+    "keyComponents": {
+      "en": "Articulated robotic arm more than 1.8 meters (5 feet 9 inches) long.",
+      "pt": "Braço robótico articulado com mais de 1,8 metro (5 pés e 9 polegadas) de comprimento.",
+      "es": "Brazo robótico articulado de más de 1,8 metros (5 pies y 9 pulgadas) de largo.",
+      "fr": "Bras robotique articulé de plus de 1,8 mètre (5 pieds 9 pouces) de long."
+    },
+    "roboticsApplication": {
+      "en": "InSight's articulated arm can be detached by another robot and installed in a fixed station, working as a manipulator to charge solar batteries or move samples.",
+      "pt": "O braço articulado do InSight pode ser desacoplado por outro robô e instalado em uma estação fixa, funcionando como manipulador para carregamento de baterias solares ou movimentação de amostras.",
+      "es": "El brazo articulado del InSight puede ser desacoplado por otro robot e instalado en una estación fija, funcionando como manipulador para cargar baterías solares o mover muestras.",
+      "fr": "Le bras articulé d'InSight peut être détaché par un autre robot et installé dans une station fixe, où il sert de manipulateur pour recharger des batteries solaires ou déplacer des échantillons."
+    },
+    "source": { "name": "NASA Science - InSight Lander", "nssdcaId": "2018-042A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/insight.webp", "imageCredit": "NASA/JPL-Caltech (PIA19811)",
+    "realHardware": { "Power": "solar-panels", "Storage": "lithium-ion", "Thermal": "mli", "Mobility": "landing-legs", "Communication": "uhf-relay", "Computer": "rad750" },
+    "scenario": {
+      "plannedDurationDays": 709, "actualDurationDays": 1480, "minTempC": -100,
+      "summary": { "en": "Planned for one Martian year; dust building up on its panels ended the mission.", "pt": "Planejado para 1 ano marciano; a poeira acumulada nos painéis encerrou a missão.", "es": "Planificado para un año marciano; el polvo acumulado en los paneles terminó la misión.", "fr": "Prévu pour une année martienne ; la poussière accumulée sur les panneaux a mis fin à la mission." }
+    }
+  },
+  {
+    "id": "perseverance",
+    "name": { "en": "Perseverance Rover", "pt": "Rover Perseverance", "es": "Rover Perseverance", "fr": "Rover Perseverance" },
+    "equipment": { "en": "Perseverance Rover", "pt": "Rover Perseverance", "es": "Rover Perseverance", "fr": "Rover Perseverance" },
+    "mission": { "en": "Mars 2020" },
+    "destination": "Mars", "type": "Rover",
+    "launch": "2020-07-30", "date": "2021-02-18", "dateKind": "Landing",
+    "status": "Active",
+    "statusDetail": { "en": "In operation.", "pt": "Em operação.", "es": "En operación.", "fr": "En activité." },
+    "location": { "en": "Jezero Crater", "pt": "Cratera Jezero", "es": "Cráter Jezero", "fr": "Cratère Jezero" },
+    "function": {
+      "en": "Investigate geology, search for signs of ancient microbial life and seal samples for return to Earth.",
+      "pt": "Investigar a geologia, buscar sinais de vida microbiana antiga e selar amostras para retorno à Terra.",
+      "es": "Investigar la geología, buscar señales de vida microbiana antigua y sellar muestras para su regreso a la Tierra.",
+      "fr": "Étudier la géologie, rechercher des traces de vie microbienne ancienne et sceller des échantillons pour leur retour sur Terre."
+    },
+    "mechanicalReuse": {
+      "en": "(Future plan) At the end of its operational life, the high-durability drill and the internal sample carousel could be cannibalized into a fixed soil drilling and mining unit.",
+      "pt": "(Plano futuro) Ao final de sua vida operacional, a broca de perfuração de alta durabilidade e o sistema interno de carrossel de amostragem poderão ser canibalizados para formar uma unidade fixa de perfuração e mineração de solo.",
+      "es": "(Plan futuro) Al final de su vida operativa, el taladro de alta durabilidad y el carrusel interno de muestras podrían canibalizarse para formar una unidad fija de perforación y minería del suelo.",
+      "fr": "(Projet futur) En fin de vie, la foreuse haute durabilité et le carrousel interne d'échantillons pourraient être récupérés pour former une unité fixe de forage et d'extraction du sol."
+    },
+    "source": { "name": "NASA Science - Mars 2020 Perseverance", "nssdcaId": "2020-052A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/perseverance.webp", "imageCredit": "NASA/JPL-Caltech (PIA23962)",
+    "realHardware": { "Power": "mmrtg", "Storage": "lithium-ion", "Thermal": "rhu", "Mobility": "rocker-bogie-titanium", "Communication": "uhf-relay", "Computer": "rad750" },
+    "scenario": {
+      "plannedDurationDays": 687, "actualDurationDays": 2095,
+      "summary": { "en": "Prime mission of one Martian year; still active (days counted up to Nov 2026).", "pt": "Missão principal de 1 ano marciano; segue ativo (dias contados até nov/2026).", "es": "Misión principal de un año marciano; sigue activo (días contados hasta nov/2026).", "fr": "Mission principale d'une année martienne ; toujours actif (jours comptés jusqu'en nov. 2026)." }
+    }
+  },
+  {
+    "id": "ingenuity",
+    "name": { "en": "Ingenuity Helicopter", "pt": "Helicóptero Ingenuity", "es": "Helicóptero Ingenuity", "fr": "Hélicoptère Ingenuity" },
+    "equipment": { "en": "Ingenuity Mars Helicopter", "pt": "Helicóptero Marciano Ingenuity", "es": "Helicóptero marciano Ingenuity", "fr": "Hélicoptère martien Ingenuity" },
+    "mission": { "en": "Mars 2020 / Ingenuity Technology Demonstration", "pt": "Mars 2020 / Demonstração de Tecnologia Ingenuity", "es": "Mars 2020 / Demostración tecnológica Ingenuity", "fr": "Mars 2020 / Démonstration technologique Ingenuity" },
+    "destination": "Mars", "type": "Helicopter",
+    "launch": "2020-07-30", "date": "2021-04-19", "dateKind": "FirstFlight",
+    "status": "Inactive",
+    "statusDetail": { "en": "Completed on January 25, 2024, after 72 flights.", "pt": "Concluído em 25 de janeiro de 2024 após 72 voos.", "es": "Concluyó el 25 de enero de 2024 tras 72 vuelos.", "fr": "Terminé le 25 janvier 2024 après 72 vols." },
+    "location": { "en": "Jezero Crater", "pt": "Cratera Jezero", "es": "Cráter Jezero", "fr": "Cratère Jezero" },
+    "function": {
+      "en": "First powered, controlled flight on another planet and aerial scout for Perseverance.",
+      "pt": "Primeiro voo motorizado e controlado em outro planeta e batedor aéreo para o Perseverance.",
+      "es": "Primer vuelo propulsado y controlado en otro planeta y explorador aéreo para el Perseverance.",
+      "fr": "Premier vol motorisé et contrôlé sur une autre planète et éclaireur aérien pour Perseverance."
+    },
+    "mechanicalReuse": {
+      "en": "Design reuse: it was the basis for the SkyFall project. On the ground, its four carbon fiber blades and ultralight motors can be reused in habitat fans.",
+      "pt": "Reutilização de design: serviu de base para o projeto SkyFall. No solo, suas quatro pás de fibra de carbono e motores ultraleves podem ser reaproveitados em ventiladores de habitats.",
+      "es": "Reutilización de diseño: sirvió de base para el proyecto SkyFall. En el suelo, sus cuatro palas de fibra de carbono y motores ultraligeros pueden reutilizarse en ventiladores de hábitats.",
+      "fr": "Réutilisation de conception : il a servi de base au projet SkyFall. Au sol, ses quatre pales en fibre de carbone et ses moteurs ultralégers peuvent servir de ventilateurs pour des habitats."
+    },
+    "keyComponents": {
+      "en": "Four carbon fiber rotor blades and high-speed electric micro-motors.",
+      "pt": "Quatro pás de rotor de fibra de carbono e micro-motores elétricos de alta rotação.",
+      "es": "Cuatro palas de rotor de fibra de carbono y micromotores eléctricos de alta velocidad.",
+      "fr": "Quatre pales de rotor en fibre de carbone et micromoteurs électriques à haute vitesse."
+    },
+    "roboticsApplication": {
+      "en": "Ingenuity's carbon fiber blades and ultralight motors can be removed to build airflow actuators and mechanical fans for human habitats or cooling systems.",
+      "pt": "As pás de fibra de carbono e motores ultraleves do Ingenuity podem ser removidos para construir atuadores de fluxo de ar e ventiladores mecânicos para habitats humanos ou sistemas de arrefecimento.",
+      "es": "Las palas de fibra de carbono y los motores ultraligeros del Ingenuity pueden retirarse para construir actuadores de flujo de aire y ventiladores mecánicos para hábitats humanos o sistemas de refrigeración.",
+      "fr": "Les pales en fibre de carbone et les moteurs ultralégers d'Ingenuity peuvent être retirés pour construire des actionneurs de flux d'air et des ventilateurs pour des habitats humains ou des systèmes de refroidissement."
+    },
+    "source": { "name": "NASA Science - Ingenuity Mars Helicopter", "nssdcaId": "2020-052A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/ingenuity.webp", "imageCredit": "NASA/JPL-Caltech (PIA24466)",
+    "realHardware": { "Power": "solar-panels", "Storage": "lithium-ion", "Thermal": "electric-heater", "Mobility": "carbon-fiber-rotor", "Communication": "uhf-relay", "Computer": "snapdragon" },
+    "scenario": {
+      "plannedDurationDays": 30, "actualDurationDays": 1027,
+      "summary": { "en": "A 30-day demonstration (5 flights) was planned; it flew 72 times over almost 3 years.", "pt": "Demonstração planejada de 30 dias (5 voos); voou 72 vezes em quase 3 anos.", "es": "Se planificó una demostración de 30 días (5 vuelos); voló 72 veces en casi 3 años.", "fr": "Une démonstration de 30 jours (5 vols) était prévue ; il a volé 72 fois en près de 3 ans." }
+    }
+  },
+  {
+    "id": "perseverance-landing-debris",
+    "name": { "en": "Perseverance Landing-Gear Debris", "pt": "Destroços do Sistema de Pouso da Perseverance", "es": "Restos del sistema de aterrizaje de Perseverance", "fr": "Débris du système d'atterrissage de Perseverance" },
+    "equipment": { "en": "Perseverance Descent Equipment Debris (Landing-Gear Debris)", "pt": "Destroços do Equipamento de Descida da Perseverance (Landing-Gear Debris)", "es": "Restos del equipo de descenso de Perseverance (Landing-Gear Debris)", "fr": "Débris de l'équipement de descente de Perseverance (Landing-Gear Debris)" },
+    "mission": { "en": "Mars 2020" },
+    "destination": "Mars", "type": "Debris",
+    "launch": "2020-07-30", "date": "2021-02-18", "dateKind": "Landing",
+    "status": "Inactive",
+    "statusDetail": { "en": "Discarded on the ground.", "pt": "Descartado no solo.", "es": "Descartado en el suelo.", "fr": "Abandonné au sol." },
+    "location": { "en": "Jezero Crater", "pt": "Cratera Jezero", "es": "Cráter Jezero", "fr": "Cratère Jezero" },
+    "function": {
+      "en": "Aerial photo mapping by the Ingenuity helicopter to assess the condition of the structure discarded after landing.",
+      "pt": "Mapeamento aerofotográfico pelo helicóptero Ingenuity para avaliar a integridade da estrutura de descarte pós-pouso.",
+      "es": "Cartografía aerofotográfica del helicóptero Ingenuity para evaluar el estado de la estructura descartada tras el aterrizaje.",
+      "fr": "Cartographie aérienne par l'hélicoptère Ingenuity pour évaluer l'état de la structure abandonnée après l'atterrissage."
+    },
+    "mechanicalReuse": {
+      "en": "Metal and polymer fragments can be collected for thermal degradation analysis or recycled as structural filler.",
+      "pt": "Fragmentos metálicos e polímeros podem ser recolhidos para análise de degradação térmica ou reciclados como matéria de preenchimento estrutural.",
+      "es": "Los fragmentos metálicos y poliméricos pueden recogerse para analizar su degradación térmica o reciclarse como material de relleno estructural.",
+      "fr": "Les fragments métalliques et polymères peuvent être collectés pour analyser leur dégradation thermique ou recyclés comme matériau de remplissage structurel."
+    },
+    "source": { "name": "NASA Science - Ingenuity Mars Helicopter", "nssdcaId": "2020-052A" },
+    "reliability": "Confirmed",
+    "imageUrl": "/images/probes/perseverance-landing-debris.webp", "imageCredit": "NASA/JPL-Caltech (PIA25217)"
+  }
+]

@@ -32,6 +32,17 @@
     }
   },
   {
+    "id": "rtg-snap27", "category": "Power", "inspiration": "Apollo ALSEP stations",
+    "massKg": 20, "outputW": 70, "degradationPctPerDay": 0.005, "coldProtectionC": 90,
+    "name": { "en": "SNAP-27 RTG" },
+    "description": {
+      "en": "Plutonium-238 generator built for the lunar science stations. Its heat keeps the electronics alive through the 14-day night.",
+      "pt": "Gerador de plutônio-238 feito para as estações científicas lunares. Seu calor mantém a eletrônica viva durante a noite de 14 dias.",
+      "es": "Generador de plutonio-238 hecho para las estaciones científicas lunares. Su calor mantiene viva la electrónica durante la noche de 14 días.",
+      "fr": "Générateur au plutonium 238 conçu pour les stations scientifiques lunaires. Sa chaleur maintient l'électronique en vie pendant la nuit de 14 jours."
+    }
+  },
+  {
     "id": "mmrtg", "category": "Power", "inspiration": "Curiosity, Perseverance",
     "massKg": 45, "outputW": 110, "degradationPctPerDay": 0.011, "coldProtectionC": 30,
     "name": { "en": "MMRTG", "pt": "MMRTG", "es": "MMRTG", "fr": "MMRTG" },

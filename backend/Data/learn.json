@@ -1,0 +1,94 @@
+{
+  "note": {
+    "en": "Names, dates, functions and locations come from official NASA documents. The proposals for physically cannibalizing parts on the ground are conceptual engineering ideas for teaching and should be independently verified for real projects.",
+    "pt": "Nomes, datas, funções e localizações vêm de documentos oficiais da NASA. As propostas de canibalização física de peças no solo são extrapolações conceituais de engenharia para o ensino e devem ser verificadas independentemente para projetos reais.",
+    "es": "Los nombres, fechas, funciones y ubicaciones provienen de documentos oficiales de la NASA. Las propuestas de canibalizar piezas en el suelo son ideas conceptuales de ingeniería para la enseñanza y deben verificarse de forma independiente en proyectos reales.",
+    "fr": "Les noms, dates, fonctions et emplacements proviennent de documents officiels de la NASA. Les propositions de récupération physique de pièces au sol sont des idées d'ingénierie conceptuelles à visée pédagogique et doivent être vérifiées de façon indépendante pour de vrais projets."
+  },
+  "precedents": [
+    {
+      "title": { "en": "Physical recovery on the lunar surface", "pt": "Resgate físico na superfície lunar", "es": "Rescate físico en la superficie lunar", "fr": "Récupération physique à la surface lunaire" },
+      "text": {
+        "en": "On Apollo 12 (1969), the astronauts walked to the inactive Surveyor 3 probe, which had landed in 1967 in Oceanus Procellarum, and removed about 10 kg of parts, including the TV camera and the soil sampler scoop. The parts were brought back to Earth to study how materials resist the space environment.",
+        "pt": "Na missão Apollo 12 (1969), os astronautas caminharam até a sonda inativa Surveyor 3, pousada em 1967 no Oceanus Procellarum, e removeram cerca de 10 kg de peças, incluindo a câmera de TV e o amostrador de solo (pá mecânica). Essas peças foram trazidas à Terra para analisar a resistência dos materiais ao ambiente espacial.",
+        "es": "En el Apolo 12 (1969), los astronautas caminaron hasta la sonda inactiva Surveyor 3, que había aterrizado en 1967 en el Oceanus Procellarum, y retiraron unos 10 kg de piezas, entre ellas la cámara de TV y la pala de muestreo. Las piezas se trajeron a la Tierra para estudiar la resistencia de los materiales al entorno espacial.",
+        "fr": "Lors d'Apollo 12 (1969), les astronautes ont marché jusqu'à la sonde inactive Surveyor 3, posée en 1967 dans l'Oceanus Procellarum, et ont retiré environ 10 kg de pièces, dont la caméra de télévision et la pelle d'échantillonnage. Ces pièces ont été rapportées sur Terre pour étudier la résistance des matériaux à l'environnement spatial."
+      }
+    },
+    {
+      "title": { "en": "Reusing designs and robotic architectures", "pt": "Reaproveitamento de projetos e arquiteturas robóticas", "es": "Reutilización de diseños y arquitecturas robóticas", "fr": "Réutilisation de conceptions et d'architectures robotiques" },
+      "text": {
+        "en": "In robotics, proven structures and buses are often reused for new missions. The InSight lander was built on the proven design of the Mars Phoenix lander; the Viking orbiters reused the infrastructure of the Mariner spacecraft; and the SkyFall Mars aircraft program builds directly on the tested technology of the Ingenuity helicopter.",
+        "pt": "Na engenharia robótica, estruturas e barramentos comprovados são frequentemente reutilizados para novas missões. O lander InSight foi construído com base no design comprovado do lander Mars Phoenix; os orbitadores Viking reaproveitaram a infraestrutura das naves Mariner; e o programa de naves marcianas SkyFall desenvolve-se diretamente sobre a tecnologia testada do helicóptero Ingenuity.",
+        "es": "En robótica, las estructuras y buses probados se reutilizan con frecuencia en nuevas misiones. El módulo InSight se construyó sobre el diseño probado del Mars Phoenix; los orbitadores Viking reutilizaron la infraestructura de las naves Mariner; y el programa de naves marcianas SkyFall se basa directamente en la tecnología probada del helicóptero Ingenuity.",
+        "fr": "En robotique, les structures et bus éprouvés sont souvent réutilisés pour de nouvelles missions. L'atterrisseur InSight a été construit sur la conception éprouvée de Mars Phoenix ; les orbiteurs Viking ont repris l'infrastructure des sondes Mariner ; et le programme d'aéronefs martiens SkyFall s'appuie directement sur la technologie testée de l'hélicoptère Ingenuity."
+      }
+    }
+  ],
+  "methodology": [
+    {
+      "title": { "en": "Payload identification", "pt": "Mapeamento de carga útil", "es": "Identificación de la carga útil", "fr": "Identification de la charge utile" },
+      "text": {
+        "en": "Students review the list of scientific instruments and parts of inactive probes (such as the Viking, Pathfinder or InSight landers) to find motors, sensors, cameras and articulated arms that could be reused.",
+        "pt": "Os alunos analisam a lista de instrumentos científicos e peças de sondas inativas (como landers Viking, Pathfinder ou InSight) para identificar motores, sensores, câmeras e braços articulados reutilizáveis.",
+        "es": "Los alumnos analizan la lista de instrumentos científicos y piezas de sondas inactivas (como los módulos Viking, Pathfinder o InSight) para identificar motores, sensores, cámaras y brazos articulados reutilizables.",
+        "fr": "Les élèves analysent la liste des instruments scientifiques et des pièces de sondes inactives (comme les atterrisseurs Viking, Pathfinder ou InSight) pour repérer les moteurs, capteurs, caméras et bras articulés réutilisables."
+      }
+    },
+    {
+      "title": { "en": "Robotic disassembly and reconfiguration", "pt": "Desmontagem e reconfiguração robótica", "es": "Desmontaje y reconfiguración robótica", "fr": "Démontage et reconfiguration robotiques" },
+      "text": {
+        "en": "In a simulation or with classroom robot prototypes (robotics kits and 3D printers), the team programs a service robot to: drive autonomously to the inactive equipment; use actuators to release connectors and screws; and integrate the recovered part into its own body to perform a new task.",
+        "pt": "Em ambiente de simulação ou com protótipos de robôs em sala de aula (kits de robótica e impressoras 3D), a equipe programa um robô de serviço para: navegar autonomamente até o equipamento inativo; utilizar atuadores para soltar conectores e parafusos; e integrar a peça resgatada no seu próprio corpo robótico para realizar uma tarefa inédita.",
+        "es": "En simulación o con prototipos de robots en el aula (kits de robótica e impresoras 3D), el equipo programa un robot de servicio para: navegar de forma autónoma hasta el equipo inactivo; usar actuadores para soltar conectores y tornillos; e integrar la pieza recuperada en su propio cuerpo para realizar una tarea nueva.",
+        "fr": "En simulation ou avec des prototypes en classe (kits de robotique et imprimantes 3D), l'équipe programme un robot de service pour : se rendre de façon autonome jusqu'à l'équipement inactif ; utiliser des actionneurs pour libérer connecteurs et vis ; et intégrer la pièce récupérée à son propre corps pour accomplir une nouvelle tâche."
+      }
+    },
+    {
+      "title": { "en": "Payload savings", "pt": "Cálculo da matriz de custo de carga", "es": "Cálculo del ahorro de carga útil", "fr": "Calcul des économies de charge utile" },
+      "text": {
+        "en": "Show with math that reusing 10 to 50 kg of metal alloys, arms and motors already sitting on the Moon or Mars saves huge amounts of fuel and money compared with launching the same mass from Earth.",
+        "pt": "Demonstra-se matematicamente que reaproveitar de 10 a 50 kg de ligas metálicas, braços e motores que já estão pré-posicionados na Lua ou em Marte economiza grandes quantidades de combustível e recursos financeiros necessários para lançar a mesma massa a partir da Terra.",
+        "es": "Se demuestra matemáticamente que reutilizar de 10 a 50 kg de aleaciones, brazos y motores que ya están en la Luna o en Marte ahorra enormes cantidades de combustible y dinero frente a lanzar la misma masa desde la Tierra.",
+        "fr": "On démontre par le calcul que réutiliser de 10 à 50 kg d'alliages, de bras et de moteurs déjà présents sur la Lune ou sur Mars économise d'énormes quantités de carburant et d'argent par rapport au lancement de la même masse depuis la Terre."
+      }
+    }
+  ],
+  "robotics": {
+    "reference": {
+      "en": "Based on the master's thesis 'Estudo Comparativo Aplicado ao Planejamento e Controle de Trajetórias de Robôs Móveis' (Andrade, Federal University of Ceará - UFC, 2011).",
+      "pt": "Baseado na dissertação de mestrado 'Estudo Comparativo Aplicado ao Planejamento e Controle de Trajetórias de Robôs Móveis' (Andrade, Universidade Federal do Ceará - UFC, 2011).",
+      "es": "Basado en la tesis de maestría 'Estudo Comparativo Aplicado ao Planejamento e Controle de Trajetórias de Robôs Móveis' (Andrade, Universidad Federal de Ceará - UFC, 2011).",
+      "fr": "D'après le mémoire de master « Estudo Comparativo Aplicado ao Planejamento e Controle de Trajetórias de Robôs Móveis » (Andrade, Université fédérale du Ceará - UFC, 2011)."
+    },
+    "topics": [
+      {
+        "title": { "en": "Asynchronous communication and signal delay", "pt": "Comunicação assíncrona e atraso de sinal", "es": "Comunicación asíncrona y retraso de señal", "fr": "Communication asynchrone et délai du signal" },
+        "text": {
+          "en": "Unlike robots on Earth running in synchronous loops, planetary rovers deal with asynchronous communication. Because of the astronomical delay between Earth and the robot, they need more onboard autonomy to avoid obstacles and follow trajectories on their own.",
+          "pt": "Diferente de robôs terrestres operando em malhas síncronas, o controle de rovers planetários lida com comunicação assíncrona. Devido ao atraso astronômico na propagação de sinal entre a Terra e o robô, exige-se maior autonomia embarcada para desvio de obstáculos e execução autônoma de trajetória.",
+          "es": "A diferencia de los robots terrestres que operan en lazos síncronos, los rovers planetarios trabajan con comunicación asíncrona. Por el retraso astronómico de la señal entre la Tierra y el robot, necesitan más autonomía a bordo para esquivar obstáculos y seguir trayectorias por sí mismos.",
+          "fr": "Contrairement aux robots terrestres fonctionnant en boucles synchrones, les rovers planétaires gèrent une communication asynchrone. À cause du délai astronomique entre la Terre et le robot, ils ont besoin de plus d'autonomie embarquée pour éviter les obstacles et suivre leurs trajectoires seuls."
+        }
+      },
+      {
+        "title": { "en": "Non-holonomic kinematic constraints", "pt": "Restrições cinemáticas não-holonômicas", "es": "Restricciones cinemáticas no holonómicas", "fr": "Contraintes cinématiques non holonomes" },
+        "text": {
+          "en": "Differential-drive rovers have non-holonomic motion constraints, such as being unable to move sideways, perpendicular to the plane of the wheels.",
+          "pt": "Rovers com tração diferencial possuem restrições não-holonômicas de movimento, como a impossibilidade de deslocamento lateral perpendicular ao plano das rodas.",
+          "es": "Los rovers de tracción diferencial tienen restricciones de movimiento no holonómicas, como no poder desplazarse lateralmente, perpendicular al plano de las ruedas.",
+          "fr": "Les rovers à entraînement différentiel ont des contraintes de mouvement non holonomes, comme l'impossibilité de se déplacer latéralement, perpendiculairement au plan des roues."
+        }
+      },
+      {
+        "title": { "en": "Cascade control architecture", "pt": "Arquitetura de controle em cascata", "es": "Arquitectura de control en cascada", "fr": "Architecture de commande en cascade" },
+        "text": {
+          "en": "The robot is split into Perception, Decision/Planning, Trajectory Generation and Actuator Control layers. A GPC (Generalized Predictive Control) outer loop smooths the linear (v) and angular (ω) velocity references fed to PID controllers in the motors' inner loop. The multivariable GPC (MIMO) is more precise because it accounts for the dynamic coupling between the wheel motors.",
+          "pt": "A arquitetura robótica divide-se nas camadas de Percepção, Decisão/Planejamento, Geração de Trajetória e Controle de Atuadores. Emprega-se a malha em cascata com o algoritmo GPC (Generalized Predictive Control) na malha externa para suavizar as referências de velocidade linear (v) e angular (ω), aplicadas a controladores PID na malha interna dos motores. O modelo GPC MIMO (multivariável) atinge maior precisão ao considerar o acoplamento dinâmico entre os motores das rodas.",
+          "es": "El robot se divide en las capas de Percepción, Decisión/Planificación, Generación de Trayectoria y Control de Actuadores. Un lazo externo GPC (Generalized Predictive Control) suaviza las referencias de velocidad lineal (v) y angular (ω) que se aplican a controladores PID en el lazo interno de los motores. El GPC multivariable (MIMO) es más preciso porque considera el acoplamiento dinámico entre los motores de las ruedas.",
+          "fr": "Le robot est découpé en couches Perception, Décision/Planification, Génération de trajectoire et Commande des actionneurs. Une boucle externe GPC (Generalized Predictive Control) lisse les consignes de vitesse linéaire (v) et angulaire (ω) appliquées à des régulateurs PID dans la boucle interne des moteurs. Le GPC multivariable (MIMO) est plus précis car il tient compte du couplage dynamique entre les moteurs des roues."
+        }
+      }
+    ]
+  }
+}

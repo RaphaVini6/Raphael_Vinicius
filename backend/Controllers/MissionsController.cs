@@ -19,10 +19,10 @@ public class MissionsController(DataStore store) : ControllerBase
             .Select(g => new MissionSummary(
                 g.First().Mission.Get(lang),
                 g.First().Destination,
-                g.Min(p => p.Landing)!,
+                g.Min(p => p.Date)!,
                 g.Any(p => p.Status == ProbeStatus.Active) ? ProbeStatus.Active : ProbeStatus.Inactive,
                 g.Select(p => new ProbeRef(p.Id, p.Name.Get(lang))).ToList()))
-            .OrderBy(m => m.Landing);
+            .OrderBy(m => m.Date);
     }
 
     [HttpGet("environments")]
@@ -30,5 +30,5 @@ public class MissionsController(DataStore store) : ControllerBase
         [PlanetaryEnvironment.Moon.ToDto(Lang.Current), PlanetaryEnvironment.Mars.ToDto(Lang.Current)];
 }
 
-public record MissionSummary(string Name, Destination Destination, string Landing, ProbeStatus Status, List<ProbeRef> Probes);
+public record MissionSummary(string Name, Destination Destination, string Date, ProbeStatus Status, List<ProbeRef> Probes);
 public record ProbeRef(string Id, string Name);

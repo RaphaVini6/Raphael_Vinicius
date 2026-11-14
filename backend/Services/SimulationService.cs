@@ -29,6 +29,7 @@ public class SimulationService(DataStore store)
             parts[cat] = c;
         }
 
+        if (probe.Scenario is null) throw new ArgumentException(M("err.notSimulable", probe.Name.Get(lang)));
         var env = PlanetaryEnvironment.Of(probe.Destination);
         var scn = probe.Scenario;
         var envMin = scn.MinTempC ?? env.MinTempC;
