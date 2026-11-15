@@ -41,7 +41,7 @@ docker compose up --build
 ```
 
 - Website: http://localhost:8080 (`FRONTEND_PORT`)
-- Backend API and docs: http://localhost:5000/scalar (`BACKEND_PORT`, docs only in Development)
+- Backend API and docs: http://localhost:5050/scalar (`BACKEND_PORT`, docs only in Development)
 
 | Service | Image | Notes |
 |---|---|---|
