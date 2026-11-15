@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { usePreferences } from '../context/Preferences'
+import { usePreferences } from '../context/preferencesContext'
 
 // canvas background: three layers of twinkling stars with scroll parallax and the odd shooting star
 export default function Starfield() {

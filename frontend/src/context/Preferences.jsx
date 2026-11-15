@@ -1,8 +1,8 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { MotionConfig } from 'motion/react'
+import { PreferencesContext } from './preferencesContext'
 import i18n from '../i18n'
 
-const PreferencesContext = createContext(null)
 const STORAGE_KEY = 'spacy-prefs'
 
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
@@ -41,4 +41,3 @@ export function PreferencesProvider({ children }) {
   )
 }
 
-export const usePreferences = () => useContext(PreferencesContext)

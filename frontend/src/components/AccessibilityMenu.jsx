@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Accessibility } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { usePreferences } from '../context/Preferences'
+import { usePreferences } from '../context/preferencesContext'
 
 function Switch({ checked, onChange, label }) {
   return <button type="button" role="switch" aria-checked={checked} aria-label={label} className="switch" onClick={() => onChange(!checked)} />

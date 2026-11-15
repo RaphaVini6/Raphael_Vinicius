@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { usePreferences } from '../context/Preferences'
+import { usePreferences } from '../context/preferencesContext'
 
 // official gov.br VLibras widget (avatar that signs the page text in Libras)
 // https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/vlibras

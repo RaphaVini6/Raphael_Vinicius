@@ -1,0 +1,7 @@
+# keep line endings consistent for everyone (Windows, Linux, Docker)
+* text=auto eol=lf
+
+*.webp binary
+*.png binary
+*.jpg binary
+*.svg text
