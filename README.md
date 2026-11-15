@@ -1,26 +1,89 @@
-# NASA Probes Museum
+# Spacy Legacy
 
-Educational website about NASA probes (active and retired), the missions they flew, their hardware, and a
-small game where you build a probe and see how long it would survive in the conditions of a real mission.
+Educational website about the NASA probes and equipment that are still on the Moon, on Mars and in deep space.
+For each one you can see what it did, where it is and how its parts could be reused by future missions. There is
+also a small game: you pick a real mission, build a probe and see how long it would survive.
 
-The site is available in English, Portuguese, Spanish and French, and has accessibility features for
-deaf users (Libras via VLibras) and blind users (audio narration).
+The site is in English, Portuguese, Spanish and French, and has accessibility features for deaf users (Libras)
+and blind users (audio narration).
+
+## What's in the site
+
+| Page | What it does |
+|---|---|
+| Home | intro, numbers of the collection, the three destinations (Moon, Mars, deep space) and highlights |
+| Exhibits | the 27 artifacts with filters by destination, status, type and a search box |
+| Artifact page | data, scientific goal, how it could be reused, location map, diagrams, NASA source link, audio narration and Libras |
+| Missions | timeline of the missions, from Surveyor 3 (1967) to Perseverance |
+| Simulator | pick a mission, choose the hardware (power, battery, insulation, wheels, radio, computer) and launch |
+| Learn | historical precedents, a 3-phase teaching method, payload savings calculator and mobile robotics basics |
+
+Accessibility menu (top right): high contrast, text size, reduce motion and the VLibras widget.
 
 ## Project structure
 
 ```
-frontend/        React + Vite (port 5173)
-backend/         ASP.NET Core 10 API (port 5000) - data, simulation, narration
-api-1-vlibras/   ASP.NET Core 10 (port 5001) - Portuguese -> Libras gloss (VLibras)
-api-2-speech/    ASP.NET Core 10 (port 5002) - text-to-speech
+frontend/        React 19 + Vite
+backend/         ASP.NET Core 10 API - data, simulation and narration
+api-1-vlibras/   ASP.NET Core 10 - Portuguese text -> Libras gloss (VLibras)
+api-2-speech/    ASP.NET Core 10 - text-to-speech
 docs/            VLibras swagger
 ```
 
-The frontend only talks to the backend. The backend calls api-1 and api-2.
+The frontend only talks to the backend; the backend calls `api-1-vlibras` and `api-2-speech`.
 
-## Running
+| Service | Local port | Docker port |
+|---|---|---|
+| frontend | 5173 | 8080 |
+| backend | 5000 | 5050 |
+| api-1-vlibras | 5001 | internal only |
+| api-2-speech | 5002 | internal only |
 
-Needs .NET 10 SDK and Node 20+.
+## Getting started
+
+```bash
+git clone https://github.com/RaphaVini6/Spacy-Legacy-Nasa-Hackathon.git
+cd Spacy-Legacy-Nasa-Hackathon
+cp .env.example .env
+```
+
+Then open `.env` and fill in `Speech__Knowlez__Key` (ask the team for it - it is never committed).
+Everything else in `.env.example` already works for local development.
+
+You can run the project in two ways: with Docker (easiest) or directly with .NET and Node.
+
+### Option 1: Docker
+
+Needs [Docker Desktop](https://www.docker.com/products/docker-desktop/). On Windows it also needs WSL 2:
+run `wsl --install` in PowerShell as administrator and restart the computer.
+
+```bash
+docker compose up -d --build
+```
+
+- Website: http://localhost:8080
+- API docs: http://localhost:5050/scalar
+
+The first build takes a few minutes. When it is ready, `docker compose ps` shows the four services as `healthy`.
+
+Useful commands:
+
+```bash
+docker compose ps                 # status
+docker compose logs -f backend    # logs of one service
+docker compose down               # stop everything (keeps the audio cache)
+docker compose up -d --build      # rebuild after pulling new code
+```
+
+Homologation / production (backend port closed, `ASPNETCORE_ENVIRONMENT=Production`, always restart):
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+```
+
+### Option 2: .NET + Node
+
+Needs the .NET 10 SDK and Node 20+. Open four terminals in the project folder:
 
 ```bash
 dotnet run --project backend
@@ -29,122 +92,127 @@ dotnet run --project api-2-speech
 cd frontend && npm install && npm run dev
 ```
 
-Open http://localhost:5173. API docs: http://localhost:5000/scalar
+- Website: http://localhost:5173
+- API docs: http://localhost:5000/scalar
 
-## Running with Docker
+Frontend scripts: `npm run dev`, `npm run build`, `npm run lint`.
 
-Needs Docker Desktop (on Windows it requires WSL 2: run `wsl --install` as administrator and restart).
+## Configuration (.env)
 
-```bash
-cp .env.example .env        # then fill in Speech__Knowlez__Key
-docker compose up --build
-```
+All settings live in one `.env` file in the project root. It is read by the three .NET projects, by Vite and by
+Docker Compose. `.env` is ignored by git; `.env.example` lists every option with comments.
 
-- Website: http://localhost:8080 (`FRONTEND_PORT`)
-- Backend API and docs: http://localhost:5050/scalar (`BACKEND_PORT`, docs only in Development)
-
-| Service | Image | Notes |
+| Variable | Used by | What it is |
 |---|---|---|
-| `frontend` | node build + nginx | serves the site and proxies `/api` to the backend |
-| `backend` | .NET 10 | reaches the APIs by service name (`api-1-vlibras`, `api-2-speech`) |
-| `api-1-vlibras` | .NET 10 | |
-| `api-2-speech` | .NET 10 | audio cache in the `speech-cache` volume. Windows voices are not available in Linux containers, so it uses Knowlez (or Azure) |
+| `ASPNETCORE_ENVIRONMENT` | .NET | `Development` shows the API docs at `/scalar` |
+| `FRONTEND_PORT`, `BACKEND_PORT` | Docker | ports on your machine (8080 and 5050) |
+| `Speech__Knowlez__Key` | api-2-speech | key of the speech service (ask the team) |
+| `Speech__Azure__Key`, `Speech__Azure__Region` | api-2-speech | optional second speech engine |
+| `VLibras__Token` | api-1-vlibras | optional, only for VLibras video endpoints |
+| `VITE_API_URL` | frontend | leave empty (Vite proxies `/api` to the backend) |
 
-Homologation / production (backend port closed, `ASPNETCORE_ENVIRONMENT=Production`, always restart):
+.NET settings use `__` for nesting: `Speech__Knowlez__Key` is `Speech:Knowlez:Key` in `appsettings.json`.
+Real environment variables always win over the `.env` file.
 
-```bash
-docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
-```
-
-Useful commands: `docker compose logs -f backend`, `docker compose down` (add `-v` to also delete the audio cache - it will spend the Knowlez trial requests again).
-
-### Configuration (.env)
-
-All settings live in a single `.env` file in the repo root, read by the three .NET projects and by Vite.
-`.env` is not committed; copy the template and fill in the keys:
-
-```bash
-cp .env.example .env
-```
-
-The speech key (`Speech__Knowlez__Key`) is not in the repo - ask the team. Without it, api-2 falls back to
-the Windows voices. Real environment variables always win over the `.env` file.
-
-## Branches
+## Branches and workflow
 
 | Branch | Use |
 |---|---|
 | `master` | stable code |
-| `dev` | development - open your feature branches from here |
-| `homologa` | staging / testing before release |
+| `dev` | development - start your branches from here |
+| `homologa` | staging, tested before release |
 | `prod` | what is deployed |
 
-Anyone can create branches (e.g. `feature/simulation-screen`). Merging into `master`, `dev`, `homologa`
-or `prod` only happens through a pull request approved by @RaphaVini6 (see `.github/CODEOWNERS`).
+1. Create a branch from `dev`: `feature/<name>` for new things, `fix/<name>` for corrections.
+2. Commit and push your branch.
+3. Open a pull request to `dev`. It needs approval from @RaphaVini6 (see `.github/CODEOWNERS`).
+
 Flow: `feature/*` -> `dev` -> `homologa` -> `prod`, and `prod` -> `master`.
 
 ## Languages
 
-- UI strings: `frontend/src/i18n/locales/*.json`
-- Probe/hardware content: `backend/Data/*.json` (each text has `en`, `pt`, `es`, `fr`)
+- Interface texts: `frontend/src/i18n/locales/{en,pt,es,fr}.json`
+- Artifacts, parts and teaching content: `backend/Data/*.json` (each text has `en`, `pt`, `es`, `fr`)
 - Simulation messages and narration: `backend/Localization/Messages.cs`
-- The API picks the language from `?lang=` or `Accept-Language` (default `en`). The frontend always sends `lang`.
 
-## Backend endpoints
+The API answers in the language of `?lang=` or the `Accept-Language` header (default `en`). The frontend
+always sends `lang`.
+
+## API
 
 | Method | Route | |
 |---|---|---|
-| GET | `/api/health` | status of backend + api-1 + api-2 |
+| GET | `/api/health` | status of the backend and the two APIs |
 | GET | `/api/probes` | list (filters: `destination`, `status`, `type`, `search`) |
-| GET | `/api/probes/{id}` | probe details |
-| GET | `/api/probes/{id}/hardware` | real hardware of the probe |
+| GET | `/api/probes/{id}` | artifact details |
+| GET | `/api/probes/{id}/hardware` | real hardware of the artifact |
 | GET | `/api/missions` | missions |
-| GET | `/api/missions/environments` | Moon / Mars conditions |
-| GET | `/api/learn` | teaching content (precedents, methodology, robotics) |
-| GET | `/api/learn/robotics-cases` | probes with a classroom robotics application |
+| GET | `/api/missions/environments` | Moon and Mars conditions |
+| GET | `/api/learn` | teaching content |
+| GET | `/api/learn/robotics-cases` | artifacts with a classroom robotics application |
 | GET | `/api/hardware`, `/api/hardware/by-category` | game parts |
 | POST | `/api/simulation` | run the game |
-| GET | `/api/simulation/{probeId}/original` | run with the real hardware |
+| GET | `/api/simulation/{probeId}/original` | run the game with the real hardware |
 | POST | `/api/libras/translate` | Portuguese text -> Libras gloss |
-| GET | `/api/libras/probes/{id}` | Libras gloss for a probe |
+| GET | `/api/libras/probes/{id}` | Libras gloss of an artifact |
 | GET | `/api/audio/probes/{id}` | narration audio (`/text` for the text only) |
 | POST | `/api/audio/simulation` | simulation result as audio (`/text` for the text only) |
-| POST | `/api/audio/speak` | read any text |
+| POST | `/api/audio/speak` | read any text aloud |
 
-Simulation request example:
+Simulation request:
 
 ```json
 { "probeId": "opportunity", "components": { "Power": "mmrtg", "Thermal": "rhu" } }
 ```
 
-Categories: Power, Storage, Thermal, Mobility, Communication, Computer. Anything not sent uses the real
-hardware of the probe. The model covers power (solar/RTG/batteries), day-night cycles, temperature, dust,
+Categories are Power, Storage, Thermal, Mobility, Communication and Computer. Anything not sent uses the real
+hardware of the probe. The model covers power (solar, nuclear, batteries), day and night, temperature, dust,
 dust storms, radiation, wear and communication. Values are simplified for teaching, not real engineering.
 
 ## Data
 
-- `backend/Data/probes.moon.json`, `probes.mars.json`, `probes.deep-space.json` - 27 artifacts from our research
-  document (NASA / NSSDCA). Each one links to its NSSDCA catalog entry.
+- `backend/Data/probes.moon.json`, `probes.mars.json`, `probes.deep-space.json` - the 27 artifacts from our
+  research document (NASA / NSSDCA), each with a link to its NSSDCA catalog entry
 - `backend/Data/components.json` - parts for the game
 - `backend/Data/learn.json` - teaching content
-- `frontend/public/images/probes/` - images (WebP). 3D renders made by the team; photos from the NASA Image
-  Library (public domain, credited in `imageCredit`).
+- `frontend/public/images/probes/` - 3D renders made by the team and NASA public domain photos (credited on
+  the artifact page)
 
-Only probes with a `scenario` (landers, rovers, the helicopter and the ALSEP stations) appear in the simulator.
+Only artifacts with a `scenario` (landers, rovers, the helicopter and the ALSEP stations) appear in the simulator.
+To add an artifact, add it to the right `probes.*.json` file and restart the backend.
 
-## Accessibility notes
+## Accessibility
 
-**Libras (api-1):** uses `POST https://traducao2.vlibras.gov.br/translate` with `{"text": "..."}`. It needs a
-`User-Agent` header or it returns 403. VLibras only translates Portuguese, so the backend always sends the
-Portuguese text. Video and `/signs` endpoints need a Conecta gov.br token (`VLibras:Token`).
+**Libras (api-1-vlibras).** Uses `POST https://traducao2.vlibras.gov.br/translate` with `{"text": "..."}`, which
+works without a token but needs a `User-Agent` header (403 otherwise). VLibras only translates Portuguese, so the
+backend always sends the Portuguese text, whatever the site language.
 
-**Speech (api-2):** gov.br doesn't have a TTS API, so we use external/local engines, in this order:
+**Audio narration (api-2-speech).** gov.br has no text-to-speech API, so api-2 tries these engines in order:
 
-1. Knowlez TTS (https://api-tts.knowlez.com/docs) - all 4 languages. Trial plan: 50 requests total, until
-   2026-12-14. Check usage at http://localhost:5002/api/usage
-2. Azure Speech - optional, only if `Speech:Azure:Key` is set
-3. Windows voices - offline, only the languages installed on the machine
+1. Knowlez TTS (https://api-tts.knowlez.com/docs) - all 4 languages. The trial plan allows 50 requests in total
+   and ends on 2026-12-14.
+2. Azure Speech - optional, only if `Speech__Azure__Key` is set.
+3. Windows voices - only when running outside Docker on Windows, and only for the installed languages.
 
-Audio is cached in `api-2-speech/audio-cache/` (ignored by git), so each text is only generated once.
-Don't delete this folder or it will spend the trial requests again. If no engine works, the backend
-returns 502 with the text and the frontend reads it with the browser voice (`speakInBrowser`).
+Every generated audio is cached, so each text spends a request only once. The cache is the `speech-cache`
+Docker volume, or `api-2-speech/audio-cache/` when running outside Docker. Don't delete it: `docker compose down -v`
+removes the volume. If no engine works, the site reads the text with the browser's own voice.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| Site is down after restarting the computer | Docker Desktop is closed. Open it, or turn on Settings -> General -> "Start Docker Desktop when you sign in" |
+| `port is already allocated` | another program or another copy of the project uses 8080 or 5050. Stop it, or change `FRONTEND_PORT` / `BACKEND_PORT` in `.env` |
+| Old containers in Docker Desktop (stopped `frontend` copies) | `docker compose down --remove-orphans` and then `docker compose up -d --build` |
+| Audio narration does not play | `Speech__Knowlez__Key` is missing in `.env`, or the trial requests ran out |
+| Site opens but the data does not load (error 502) | the backend is still starting or stopped. Check `docker compose ps` and `docker compose logs backend` |
+| Changes in the code don't show up in Docker | rebuild: `docker compose up -d --build` |
+
+## Credits
+
+- Artifact data: NASA and the NASA Space Science Data Coordinated Archive (NSSDCA)
+- Photos: NASA Image and Video Library (public domain)
+- Libras: VLibras, Brazilian government (gov.br)
+- Robotics background: Andrade, *Estudo Comparativo Aplicado ao Planejamento e Controle de Trajetórias de Robôs
+  Móveis*, Federal University of Ceará (UFC), 2011

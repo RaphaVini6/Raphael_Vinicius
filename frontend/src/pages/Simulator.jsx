@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { AnimatePresence, animate, motion } from 'motion/react'
 import {
@@ -8,7 +8,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import { useApi } from '../hooks/useApi'
 import { getEnvironments, getHardwareByCategory, getProbes, getSimulationNarration, simulate, simulationAudio } from '../services/api'
-import { usePreferences } from '../context/Preferences'
+import { usePreferences } from '../context/preferencesContext'
 import ListenButton from '../components/ListenButton'
 import ScoreRing from '../components/ScoreRing'
 import { ErrorBox, Loader, Reveal } from '../components/ui'
@@ -54,10 +54,8 @@ export default function Simulator() {
   const components = custom.probeId === probe?.id ? custom.map : (probe?.realHardware ?? {})
   const setComponents = (map) => setCustom({ probeId: probe.id, map })
 
-  const parts = useMemo(() => {
-    const all = Object.values(hardware.data ?? {}).flat()
-    return CATEGORIES.map((c) => all.find((x) => x.id === components[c])).filter(Boolean)
-  }, [hardware.data, components])
+  const allParts = Object.values(hardware.data ?? {}).flat()
+  const parts = CATEGORIES.map((c) => allParts.find((x) => x.id === components[c])).filter(Boolean)
 
   const pickProbe = (id) => {
     setRun(null)
